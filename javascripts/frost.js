@@ -8,13 +8,36 @@ $(function() {
 			hide: 'clip',
 			width: 680
 		});
+	
 	$( "#maincontent" ).accordion({
 		autoHeight: false,
 		navigation: true,
 		collapsible: true,
 		animated: 'bounceslide'
-	});		
+	});	
+	
+	$( "#expChart" ).mousemove(function(e){
+		var y = $("#expChart").offset().top - e.pageY; 
+		updateFromChart(y);
+	});
+	
 });
+
+function updateFromChart(pos) {
+	//if (pos > 300) lang = "java";
+	var lang = "java";
+	if (pos > 275 && pos <= 305) lang = "php";
+	if (pos > 245 && pos <= 275) lang = "javascript";
+	if (pos > 215 && pos <= 245) lang = "mysql";
+	if (pos > 185 && pos <= 215) lang = "ajax";
+	if (pos > 155 && pos <= 185) lang = "json";
+	if (pos > 125 && pos <= 155) lang = "jquery";
+	if (pos > 95 && pos <= 125) lang = "csharp";
+	if (pos > 65 && pos <= 95) lang = "ror";
+	if (pos > 35 && pos <= 65) lang = "perl";
+	if (pos <= 35) lang = "jsp";
+	setSliders(lang);
+}
 
 $(document).ready(function() {
 	$.gchart.setDefaults({
@@ -41,6 +64,7 @@ $(document).ready(function() {
 				,'#081530',16)],
 		series: [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,25,20,30],'#8c9fdc')]
 	});
+	
 });
 
 function oom() {
