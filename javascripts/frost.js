@@ -6,7 +6,8 @@ $(function() {
 			resizable: false,
 			show: 'clip',
 			hide: 'clip',
-			width: 680
+			speed: 'fast',
+			width: 780
 		});
 	
 	$( "#maincontent" ).accordion({
@@ -24,7 +25,6 @@ $(function() {
 });
 
 function updateFromChart(pos) {
-	//if (pos > 300) lang = "java";
 	var lang = "java";
 	if (pos > 275 && pos <= 305) lang = "php";
 	if (pos > 245 && pos <= 275) lang = "javascript";
@@ -37,6 +37,13 @@ function updateFromChart(pos) {
 	if (pos > 35 && pos <= 65) lang = "perl";
 	if (pos <= 35) lang = "jsp";
 	setSliders(lang);
+}
+
+function displayFull(id) {
+	var idhtml = $( '#'+id ).html();
+	$( '#projectdetails' ).html(idhtml);
+	$( 'h2.projtitle' ).removeClass("whiteonblue").addClass("blueonwhite");
+	$( '#'+id+'heading' ).addClass("whiteonblue");
 }
 
 $(document).ready(function() {

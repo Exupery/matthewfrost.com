@@ -73,17 +73,17 @@
 				<h3><a href='#languagestechnologies'>Languages &amp; Technologies</a></h3>
 				<div id='languagestechnologies' class='centcontent'>
 					<div class='pointer'>
-					    <span id='java' class='langtech' onMouseOver="setSliders('java')">Java</span>
-					    <span id='php' class='langtech' onMouseOver="setSliders('php')">PHP</span>
-					    <span id='javascript' class='langtech' onMouseOver="setSliders('javascript')">JavaScript</span>
-					    <span id='mysql' class='langtech' onMouseOver="setSliders('mysql')">MySQL</span>
-					    <span id='ajax' class='langtech' onMouseOver="setSliders('ajax')">AJAX</span>
-					    <span id='json' class='langtech' onMouseOver="setSliders('json')">JSON</span>
-					    <span id='jquery' class='langtech' onMouseOver="setSliders('jquery')">jQuery</span>
-					    <span id='csharp' class='langtech' onMouseOver="setSliders('csharp')">C#</span>
-					    <span id='ror' class='langtech' onMouseOver="setSliders('ror')">Ruby on Rails</span>
-					    <span id='perl' class='langtech' onMouseOver="setSliders('perl')">Perl</span>
-					    <span id='jsp' class='langtech' onMouseOver="setSliders('jsp')">JSP</span>
+					    <span id='java' class='langtech' onMouseOver='setSliders(this.id)'>Java</span>
+					    <span id='php' class='langtech' onMouseOver='setSliders(this.id)'>PHP</span>
+					    <span id='javascript' class='langtech' onMouseOver='setSliders(this.id)'>JavaScript</span>
+					    <span id='mysql' class='langtech' onMouseOver='setSliders(this.id)'>MySQL</span>
+					    <span id='ajax' class='langtech' onMouseOver='setSliders(this.id)'>AJAX</span>
+					    <span id='json' class='langtech' onMouseOver='setSliders(this.id)'>JSON</span>
+					    <span id='jquery' class='langtech' onMouseOver='setSliders(this.id)'>jQuery</span>
+					    <span id='csharp' class='langtech' onMouseOver='setSliders(this.id)'>C#</span>
+					    <span id='ror' class='langtech' onMouseOver='setSliders(this.id)'>Ruby on Rails</span>
+					    <span id='perl' class='langtech' onMouseOver='setSliders(this.id)'>Perl</span>
+					    <span id='jsp' class='langtech' onMouseOver='setSliders(this.id)'>JSP</span>
 					</div>
 					<br /><div id='tip'>(mouse over a technology to see sources of and relative amount of experience)</div><br />
 					<div id='summary'>
@@ -94,39 +94,47 @@
 						<div id='summarytxt'></div>
 					</div>
 				</div>
-				<h3><a href='#developmentprojects'>Noteworthy Development Projects</a></h3>
-				<div id='developmentprojectscontent' class='centcontent'>
-					<div id='tip'>(sole developer on all below projects)</div><br />
-					<h1 id='optionometer' class='inline'>Optionometer</h1>
-					<img id='oomscreen' class='screenshot' src='images/oom.jpg' onClick='oom()'/>
-					<div id='oomtxt' class='inline'>
-						Still in the finishing stages of development <a href="http://www.optionometer.com/">
-						<span class='atext'>www.optionometer.com</span></a> is being created largely for my hobby of equity option trading. The
-						data presented represents a large amount of number crunching on the back-end (written in 
-						<span class='ital'>Java</span>). 
-						In an effort to find the most profitable option trades available the <span class='ital'>Java</span> app is constantly 
-						calculating	potential multi-leg strategies throughout the trading day.  Of the tens of thousands of
-						possible trades the app selects the best ones and passes those to a <span class='ital'>MySQL</span> database where the 
-						site retrieves the data via <span class='ital'>AJAX</span> calls. 
-					</div><br />
-					<h1 id='tradedetective' class='inline'>Trade Detective</h1><div id='tdtxt' class='inline'>
-						Designed to assist analysts 
-						with trade audits, this web-app saves analysts a significant amount of time by bringing together the needed 
-						information on a trade investigation. Originally coded in <span class='ital'>Ruby on Rails</span> before a re-deployment 
-						in <span class='ital'>PHP</span> to facilitate better integration with other tools in use.
-					</div><br />
-					<h1 id='bbodetective' class='inline'>BBO Detective</h1><div id='bbotxt' class='inline'>
-						Similar to the above, this also assists with piecing together the details of a trade.  However, unlike the above, which
-						can only match trades within a single liquidity provider, BBO Detective matches trades that can go through multiple (such as
-						in a best bid/best offer system).  Also completed in <span class='ital'>PHP</span>, though it utilizes heavier use of 
-						<span class='ital'>JavaScript</span> to shift more of the processing client-side	(such as table generation).
-					</div><br />
-					<h1 id='mcqfm' class='inline'>Mission Control Quote Flow Monitor</h1><div id='qfmtxt' class='inline'>
-						This web-app introduces a scalable solution for monitoring proper feeding of FOREX quotes. On a single page an analyst can monitor every security on every server with both visual and audible warnings
-						of quotes not updating as timely as expected. This web-app is written almost entirely in <span class='ital'>JavaScript</span>, 
-						with only a minimal amount of <span class='ital'>HTML</span> framework and a <span class='ital'>PHP</span> 
-						back-end that serves only to respond to <span class='y'>AJAX</span> calls and retrieve
-						the requested information from <span class='ital'>MySQL</span>.    
+				<h3><a href='#developmentprojects'>Development Projects</a></h3>
+				<div id='developmentprojectscontent'>
+					<div id='tip'>(mouse over for details - sole developer on all projects)</div><br />
+					<div id='projecttitles' class='projects inline'>
+						<h2 id='oomtxtheading' class='projtitle pointer blueonwhite' onMouseOver='displayFull("oomtxt");'>Optionometer</h2>
+						<h2 id='tdtxtheading' class='projtitle pointer blueonwhite' onMouseOver='displayFull("tdtxt");'>Trade Detective</h2>
+						<h2 id='bbotxtheading' class='projtitle pointer blueonwhite' onMouseOver='displayFull("bbotxt");'>BBO Detective</h2>
+						<h2 id='qfmtxtheading' class='projtitle pointer blueonwhite' onMouseOver='displayFull("qfmtxt");'>Quote Flow Monitor</h2>
+					</div>
+					<div id='projectdetails'></div>
+					<div id='projtexts' class='notvis'>
+						<span id='oomtxt'>
+							<img id='oomscreen' class='screenshot' src='images/oom.jpg' onClick='oom()'/>
+							Still under development <a href="http://www.optionometer.com/">
+							<span class='atext'>www.optionometer.com</span></a> is being created largely for my hobby of equity option trading. The
+							data presented represents a large amount of number crunching on the back-end (written in 
+							<span class='ital'>Java</span>). 
+							In an effort to find the most profitable option trades available the <span class='ital'>Java</span> app is constantly 
+							calculating	potential multi-leg strategies throughout the trading day.  Of the tens of thousands of
+							possible trades the app selects the best ones and passes those to a <span class='ital'>MySQL</span> database where the 
+							site retrieves the data via <span class='ital'>AJAX</span> calls. 
+						</span>
+						<span id='tdtxt'>
+							Designed to assist analysts 
+							with trade audits, this web-app saves analysts a significant amount of time by bringing together the needed 
+							information on a trade investigation. Originally coded in <span class='ital'>Ruby on Rails</span> before a re-deployment 
+							in <span class='ital'>PHP</span> to facilitate better integration with other tools in use.
+						</span>
+						<span id='bbotxt'>
+							Similar to the above, this also assists with piecing together the details of a trade.  However, unlike the above, which
+							can only match trades within a single liquidity provider, BBO Detective matches trades that can go through multiple (such as
+							in a best bid/best offer system).  Also completed in <span class='ital'>PHP</span>, though it utilizes heavier use of 
+							<span class='ital'>JavaScript</span> to shift more of the processing client-side	(such as table generation).
+						</span>
+						<span id='qfmtxt'>
+							This web-app introduces a scalable solution for monitoring proper feeding of FOREX quotes. On a single page an analyst can monitor every security on every server with both visual and audible warnings
+							of quotes not updating as timely as expected. This web-app is written almost entirely in <span class='ital'>JavaScript</span>, 
+							with only a minimal amount of <span class='ital'>HTML</span> framework and a <span class='ital'>PHP</span> 
+							back-end that serves only to respond to <span class='y'>AJAX</span> calls and retrieve
+							the requested information from <span class='ital'>MySQL</span>.    
+						</span>
 					</div>
 					<div id='oomframe'><img id='oomimage' src='images/oom.jpg'/></div>
 				</div>
