@@ -7,13 +7,13 @@ $(function() {
 			show: 'clip',
 			hide: 'clip',
 			speed: 'fast',
-			width: 780
+			width: 790
 		});
 	
 	$( "#maincontent" ).accordion({
 		autoHeight: false,
 		navigation: true,
-		collapsible: true,
+		collapsible: false,
 		animated: 'bounceslide'
 	});	
 	
@@ -46,6 +46,10 @@ function displayFull(id) {
 	$( '#'+id+'heading' ).addClass("whiteonblue");
 }
 
+function openSummary() {
+	$( '#maincontent' ).accordion( "activate" , 0 );
+}
+
 $(document).ready(function() {
 	$.gchart.setDefaults({
 		backgroundColor: '#e1e2ea',
@@ -71,7 +75,7 @@ $(document).ready(function() {
 				,'#081530',16)],
 		series: [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,25,20,30],'#8c9fdc')]
 	});
-	
+	displayFull("oomtxt");
 });
 
 function oom() {

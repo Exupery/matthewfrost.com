@@ -1,13 +1,12 @@
-html, body {height: 100%; margin: 0px; padding: 0px; background-color: #FFFFFF; color: #06063c;}
-#header {width: 100%; background-color: #06063c; margin: 0px; height: 120px; border-bottom-width: 0px; border-bottom-color: #06063c;
-	display:block; padding-top: 0px; margin-top: -38px;}
-#name h1{font-size: 3.5em; height: 100px; font-style:italic; padding: 22px; color: #FFFFFF; cursor: default;
-	font-family: "Trebuchet MS", Helvetica, sans-serif; }
-.center {text-align: center; width: 60%; min-width: 875px; max-width: 1100px; margin-left: auto; margin-right: auto;
-	background-color: #FFFFFF;}
+html, body {height: 100%; min-width: 1100px; margin: 0px; padding: 0px; background-color: #FFFFFF; color: #06063c;}
+#header {width: 100%; background-color: #E1E2EA; margin: 0px; height: 100px; padding-top: 0px;}
+#headercontent {background-color: #E1E2EA; height:100px; line-height:100px;}
+#headercontent h1{font-size: 3.5em; font-style:italic; color: #06063c; cursor: default;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; margin: 0px; }
+.center {text-align: center; margin-left: auto; margin-right: auto; }
+.content {width: 60%; min-width: 1075px; background-color: #FFFFFF;}
 #charts {height: 415px; text-align: center; margin-left: auto; margin-right: auto; background-color: #e1e2ea;}
-#maincontent, #main {height: auto; min-height: 768px;}
-#headercontent {background-color: #06063c;}
+#maincontent, #main {height: auto; min-height: 768px; }
 #summarycontent .pop {width: 96px; height: 96px; padding: 5px;}
 #summarycontent .pop:hover {width: 106px; height: 106px; padding: 0px;}
 .screenshot {width: 200px; height: auto; float: right; cursor: pointer;}
@@ -16,8 +15,9 @@ html, body {height: 100%; margin: 0px; padding: 0px; background-color: #FFFFFF; 
 .c {display: inline; text-decoration: none;}
 .langtech:hover {color: #173db9; cursor: pointer; }
 .projtitle {width: 200px; padding: 5px; text-align: center; font-size: 1.25em; height: auto; margin: 5px;}
-.blueonwhite {color: #06063c;background-color: #FFFFFF; border-width: 2px; border-radius: 4px; border-color: #e1e2ea}
-.whiteonblue {color: #FFFFFF; background-color: #06063c; border-width: 2px; border-radius: 4px; border-color: #e1e2ea}
+#projectdetails {padding-top: 10px;}
+.blueonwhite {color: #06063c;background-color: #FFFFFF; border-style:solid; border-width: 1px; border-radius: 4px; border-color: #06063c}
+.whiteonblue {color: #FFFFFF; background-color: #06063c; border-style:solid; border-width: 1px; border-radius: 4px; border-color: #efeff2}
 a {color: #183c8f; text-decoration: none;}
 a:hover {color: #8790c7; text-decoration: none;}
 .atext {color: #183c8f;}
@@ -34,3 +34,4 @@ a:hover {color: #8790c7; text-decoration: none;}
 #educationcertifications {height: 544px;}
 #sumhead {text-align: right; color: #111a4b;}
 #headshot {float: right; padding-left: 20px;}
+#border {border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #06063c;}
