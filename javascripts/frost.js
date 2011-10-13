@@ -112,26 +112,26 @@ function setSliders(lang) {
 
 function getSummary(lang) {
 	var html = "";
-	if (lang == "java") html = "My schooling is focused largely on Java, and it's also used extensively in various personal " +
-			"trading applications, though only slightly at work";
+	if (lang == "java") html = "My acedemics are focused largely on Java, and it's also used extensively in various personal " +
+			"trading applications, though only slightly at work, typically for small non-web based projects";
 	if (lang == "php") html = "For web based projects this is my most often used server side language, " +
-			"particularly at work due to ease of deployment";
+			"particularly at work due to ease of deployment and integration";
 	if (lang == "javascript") html = "JavaScript will probably be the most important language of the next decade, " +
-			"I've been using it more powerfully with each new project so they feel more like an app and less like a web page";
+			"I've been using it more powerfully with each new project to create a feel more like an application than a web page";
 	if (lang == "csharp") html = "Primarily used C# to create an automated trading application that could easily interact " +
-			"with my brokerage's API. This was eventually abandoned in favor of a Java app using the FIX protocol";
-	if (lang == "ror") html = "My first app put into production was written in RoR (later re-written in PHP).  I wasn't " +
-			"crazy about RoR, but I will say "+
+			"with my brokerage's API. This was eventually abandoned in favor of a re-write in Java and using the FIX protocol to place trades";
+	if (lang == "ror") html = "My first app put into production was written in RoR (later re-written in PHP).  Regardless of how " +
+			"one feels about the language, there is no arguing that "+
 			"<a href='http://railsforzombies.org/' target='_blank'><span class='atext'>Rails for Zombies</span></a>"+
-			" is by far the most entertaining way to learn a language";
+			" is by far the most entertaining way to learn a new language";
 	if (lang == "perl") html = "Thus far used almost entirely for school with only the occasional " +
-			"non-academic use";
-	if (lang == "jsp") html = "I love Java, so I was excited to expirement with JSP, but sadly I haven't had the opportunity  " +
-			"to work with it on a large sized project yet";
-	if (lang == "mysql") html = "Nearly every project I've worked on has involved utlizing a MySQL database";
-	if (lang == "ajax") html = "AJAX is used in nearly everything web related I code, " +
-			"it's a critical tool to go from web-page to web-app";
-	if (lang == "json") html = "Given the choice I use JSON whenever possible, except in the rare cases where " +
+			"non-academic use.  Though learning Perl has greatly helped with my use of REGEX in every other language";
+	if (lang == "jsp") html = "I really enjoy coding in Java, so I was excited to expirement with JSP, but sadly I haven't had the " +
+			"opportunity to work with it on a large sized project yet";
+	if (lang == "mysql") html = "Nearly every project I've worked on has involved accessing MySQL databases";
+	if (lang == "ajax") html = "AJAX is used in nearly everything web related I code as " +
+			"it's critical to transition the feel from web-page to web-app";
+	if (lang == "json") html = "Given the choice I use JSON whenever possible, as it's rare when " +
 			"using XML would offer a significant benefit";
 	if (lang == "jquery") html = "A lot of my earlier JavaScript work was done without the aid of a framework.  Eventually I " +
 			"played around with both Dojo and jQuery before deciding jQuery was the better choice";
