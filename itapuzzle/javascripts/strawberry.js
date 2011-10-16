@@ -17,70 +17,58 @@ function start() {
 }
 
 function mapFields() {
-	var field = new Field(testField);
-	var optimalLayout = findOptimal(field);
-	console.log('subroutine returned: $'+optimalLayout.totalCost);
-}
-
-function findOptimal(field) {
-	var greenhouses = new Array();
-	var region = field.fullStrawberryRegion;
-	//var bestCost = region.cost;
-	var unbeatableCost = 10 + field.numPlants;
-	if (region.cost == unbeatableCost) {
-		greenhouses.push(region);
-		return new Matrix(greenhouses);
-	}
-	console.log('Full region cost: $'+region.cost);
-	//******************
-	var gh = new Array();
-	for (var i in field.leftEdges) {
-		var nw = field.leftEdges[i];
-		for (var j in field.rightEdges) {
-			var se = field.rightEdges[j];
-			if (nw.row <= se.row && nw.col <= se.col) {
-				gh.push(new Greenhouse(nw, se));
-			}
+	var fullField = getField(testField);
+	//TODO: if max==1 || bestcost return fullField;
+	console.log(fullField.cost);
+	for (var i=fullField.northWest.row; i<=fullField.southEast.row; i++) {
+		for (var j=fullField.northWest.col; j<=fullField.southEast.col; j++) {
+			console.log(i+' '+j);
+			var left = getField(testField, 0, fullField.southEast.col, 0, 6);
+			var right = getField(testField, fullField.northWest.col, 50, 0, 6);
+			console.log(left.cost+' '+right.cost);
 		}
 	}
-	console.log(gh.length);
-	for (var i in gh) {
-		//console.log(gh[i].cost);
-		
-	}
-	
-	//******************
-	return new Matrix(greenhouses);
 }
 
-function Field(fieldArray) {
-	this.numRows = fieldArray.length;
-	this.numCols = fieldArray[0].length;
-	this.leftEdges = new Array();
-	this.rightEdges = new Array();
-	this.numPlants = 0;
-
-	var farthestWest = this.numCols;
-	var farthestEast = 0;
-	var farthestNorth = this.numRows;
-	var farthestSouth = 0;
+function isValid() {
+	var valid = false;
 	
+	
+	return valid;
+}
+
+function getField(fieldArray, w, e, n, s) {
+	var numRows = fieldArray.length;
+	var numCols = fieldArray[0].length;
+	//var leftEdges = new Array();
+	//var rightEdges = new Array();
+	var numPlants = 0;
+
+	var westLimit = (w) ? w : 0;
+	var eastLimit = (e) ? e : numCols;
+	var northLimit = (n) ? n : 0;
+	var southLimit = (s) ? s : numRows;
+	var farthestWest = numCols;
+	var farthestEast = 0;
+	var farthestNorth = numRows;
+	var farthestSouth = 0;
 	
 	for (var i in fieldArray) {
 		var line = fieldArray[i];
 		for (var j=0; j < line.length; j++) {
 			if (line.charAt(j) == '@') { 
-				this.numPlants++;
-				if (line.charAt(j-1) == '.' || j==0) this.leftEdges.push(new Edge(i, j));
-				if (line.charAt(j+1) == '.' || j==this.numCols-1) this.rightEdges.push(new Edge(i, j));
-				if (j < farthestWest) farthestWest = j;
-				if (j > farthestEast) farthestEast = j;
-				if (i < farthestNorth) farthestNorth = i;
-				if (i > farthestSouth) farthestSouth = i;
+				numPlants++;
+				//if (line.charAt(j-1) == '.' || j==0) leftEdges.push(new Edge(i, j));
+				//if (line.charAt(j+1) == '.' || j==numCols-1) rightEdges.push(new Edge(i, j));
+				if (j < farthestWest && j >= westLimit) farthestWest = j;
+				if (j > farthestEast && j <= eastLimit) farthestEast = j;
+				if (i < farthestNorth && i >= northLimit) farthestNorth = i;
+				if (i > farthestSouth && i <= southLimit) farthestSouth = i;
 			}
 		}
 	}
-	this.fullStrawberryRegion = new Greenhouse(new Edge(farthestNorth, farthestWest), new Edge(farthestSouth, farthestEast));
+
+	return new Greenhouse(new Edge(farthestNorth, farthestWest), new Edge(farthestSouth, farthestEast));
 }
 
 function Edge(r, c) {
@@ -96,6 +84,7 @@ function Greenhouse(nw, se) {
 }
 
 function Matrix(greenhouses) {
+	this.greenhouses = greenhouses;
 	this.totalCost = 0;
 	for (var i in greenhouses) {
 		this.totalCost += greenhouses[i].cost;
