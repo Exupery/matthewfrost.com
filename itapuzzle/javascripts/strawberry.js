@@ -33,13 +33,21 @@ function findOptimal(field) {
 	}
 	console.log('Full region cost: $'+region.cost);
 	//******************
-	
-	for (var i=region.northWest.row; i<=region.southEast.row; i++ ) {
-		for (var j=region.northWest.col; j<=region.southEast.col; j++) {
-			
+	var gh = new Array();
+	for (var i in field.leftEdges) {
+		var nw = field.leftEdges[i];
+		for (var j in field.rightEdges) {
+			var se = field.rightEdges[j];
+			if (nw.row <= se.row && nw.col <= se.col) {
+				gh.push(new Greenhouse(nw, se));
+			}
 		}
 	}
-	
+	console.log(gh.length);
+	for (var i in gh) {
+		//console.log(gh[i].cost);
+		
+	}
 	
 	//******************
 	return new Matrix(greenhouses);
