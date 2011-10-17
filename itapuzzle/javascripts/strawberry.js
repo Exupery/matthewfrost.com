@@ -23,8 +23,8 @@ function mapFields() {
 	for (var i=fullField.northWest.row; i<=fullField.southEast.row; i++) {
 		for (var j=fullField.northWest.col; j<=fullField.southEast.col; j++) {
 			console.log(i+' '+j);
-			var left = getField(testField, 0, fullField.southEast.col, 0, 6);
-			var right = getField(testField, fullField.northWest.col, 50, 0, 6);
+			var left = getField(testField);
+			var right = getField(testField);
 			console.log(left.cost+' '+right.cost);
 		}
 	}
@@ -40,26 +40,22 @@ function isValid() {
 function getField(fieldArray, w, e, n, s) {
 	var numRows = fieldArray.length;
 	var numCols = fieldArray[0].length;
-	//var leftEdges = new Array();
-	//var rightEdges = new Array();
 	var numPlants = 0;
 
 	var westLimit = (w) ? w : 0;
 	var eastLimit = (e) ? e : numCols;
 	var northLimit = (n) ? n : 0;
 	var southLimit = (s) ? s : numRows;
-	var farthestWest = numCols;
-	var farthestEast = 0;
-	var farthestNorth = numRows;
-	var farthestSouth = 0;
+	var farthestWest = eastLimit;
+	var farthestEast = westLimit;
+	var farthestNorth = southLimit;
+	var farthestSouth = northLimit;
 	
 	for (var i in fieldArray) {
 		var line = fieldArray[i];
 		for (var j=0; j < line.length; j++) {
 			if (line.charAt(j) == '@') { 
 				numPlants++;
-				//if (line.charAt(j-1) == '.' || j==0) leftEdges.push(new Edge(i, j));
-				//if (line.charAt(j+1) == '.' || j==numCols-1) rightEdges.push(new Edge(i, j));
 				if (j < farthestWest && j >= westLimit) farthestWest = j;
 				if (j > farthestEast && j <= eastLimit) farthestEast = j;
 				if (i < farthestNorth && i >= northLimit) farthestNorth = i;
