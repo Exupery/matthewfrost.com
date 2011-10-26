@@ -13,34 +13,31 @@ function start() {
                 var html = testField[i]+"<br />";
                 document.getElementById('output').innerHTML += html;
         }
-        var bestGHs = new Array();
-        bestGHs[0] = mapFields(getField(testField));
-        for (var i=1; i<testMax; i++) { 
-        	//bestGHs[i] = mapFields(getField(testField));
-        	var gh = bestGHs[i-1].greenhouses;
-        	
-        	for (var j in gh) {
-        		bestGHs[i] = mapFields(getField(testField, gh[j].northWest, gh[j].southEast));
-        	}
-        	//bestGHs[i].merge(gh);
-        	console.log(i+': '+bestGHs[i].greenhouses.length);
-        }
-        for (var g in bestGHs) {
-        	console.log('Amount: '+bestGHs[g].amount+' Cost: '+bestGHs[g].totalCost);
-        	
-        }
+        var gh = getField(testField);
+        console.log(gh.cost);
+        gh.setChildren(mapFields(gh));
+        
+        createChildren(gh);
+       
+}
+
+function createChildren(gh) {
+	var greenhouses = gh.children;
+    for (var i in greenhouses) {
+    	greenhouses[i].setParent(gh);
+    	greenhouses[i].setChildren(mapFields(greenhouses[i]));
+    	console.log("Parent: "+greenhouses[i].cost+" Children: "+greenhouses[i].childCost);//delme
+    	if (greenhouses[i].children.length > 0 && greenhouses[i].childCost != greenhouses[i].cost) createChildren(greenhouses[i]);
+    }
 }
 
 function mapFields(field) {
-        //var field = getField(rawField);
-        var bestCost = field.cost+99;
+        var bestCost = field.cost+999;
         //TODO: if max==1 || bestcost return fullField;
-        //console.log(field.cost);
         var cost = null;
         var greenhouses = new Array();
         
         for (var i=field.northWest.row; i<=field.southEast.row; i++) {
-            //console.log('Row: '+i);
             var upper = getField(testField, field.northWest, new Edge(i, field.southEast.col));
             var lower =  getField(testField, new Edge(i+1, field.northWest.col), field.southEast);
             cost = upper.cost+lower.cost;
@@ -48,21 +45,18 @@ function mapFields(field) {
             	greenhouses.splice(0, greenhouses.length, upper, lower);
                 bestCost = cost;
             }
-            //console.log(upper.cost+' '+lower.cost+' '+cost);
         }
         for (var j=field.northWest.col; j<=field.southEast.col; j++) {
-            //console.log('Col: '+j);
             var left = getField(testField, field.northWest, new Edge(field.southEast.row, j));
             var right = getField(testField, new Edge(field.northWest.row, j+1), field.southEast);
             cost = left.cost+right.cost;
-            //console.log(left.cost+' '+right.cost+' '+cost);
             if (cost < bestCost) {
             	greenhouses.splice(0, greenhouses.length, left, right);
                 bestCost = cost;
             }
         }
-        //console.log("***GH LENGTH***"+greenhouses.length);
-        return new Matrix(greenhouses);
+        
+        return greenhouses;
 }
 
 function getField(fieldArray, nw, se) {
@@ -102,10 +96,22 @@ function Edge(r, c) {
 }
 
 function Greenhouse(nw, se) {
-        var area = (se.col - nw.col + 1) * (se.row - nw.row + 1);
-        this.cost = (area > 0) ? 10 + area : 0;
+		this.area = (se.col - nw.col + 1) * (se.row - nw.row + 1);
+        this.cost = (this.area > 0) ? 10 + this.area : 0;
+        this.childCost = 0;
         this.northWest = nw;
         this.southEast = se;
+        this.parent = null;
+        this.children = new Array();
+        this.setParent = function(p) {this.parent = p;};
+        this.setChildren = function(c) {
+        		this.children = c;
+        		for (var i in c) {
+        			this.childCost += c[i].cost;
+        		}
+        		//console.log(this.parent);
+        		//if (this.childCost <= c[0].parent.cost) this.children = c;
+        	};
 }
 
 function Matrix(gh) {
