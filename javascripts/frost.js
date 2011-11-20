@@ -73,7 +73,7 @@ $(document).ready(function() {
 				'left', 
 				['jsp','perl','ror','c#','jquery','json','ajax','mysql','javascript','php','java']
 				,'#081530',16)],
-		series: [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,25,20,30],'#8c9fdc')]
+		series: [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,40,20,30],'#8c9fdc')]
 	});
 	displayFull("oomtxt");
 });
@@ -87,7 +87,7 @@ function updateChart(w, s, p, c) {
 	$('#sourceChart').gchart('change', 'series', [$.gchart.series('Source', [w, s, p],['#f5f50a','#00c400','#c40000'])]);
 	var color = ['#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc','#8c9fdc'];
 	color[c] = '#173db9';
-	$('#expChart').gchart('change', 'series', [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,25,20,30],color)]);
+	$('#expChart').gchart('change', 'series', [$.gchart.series('Amount',[100,85,95,90,85,75,80,15,40,20,30],color)]);
 }
 
 function setSliders(lang) {
@@ -120,14 +120,14 @@ function getSummary(lang) {
 			"I've been using it more powerfully with each new project to create a feel more like an application than a web page";
 	if (lang == "csharp") html = "Primarily used C# to create an automated trading application that could easily interact " +
 			"with my brokerage's API. This was eventually abandoned in favor of a re-write in Java and using the FIX protocol to place trades";
-	if (lang == "ror") html = "My first app put into production was written in RoR (later re-written in PHP).  Regardless of how " +
-			"one feels about the language, there is no arguing that "+
+	if (lang == "ror") html = "My first app put into production was written in RoR.  Regardless of one's " +
+			"opinion on how well it scales, there's no arguing "+
 			"<a href='http://railsforzombies.org/' target='_blank'><span class='atext'>Rails for Zombies</span></a>"+
 			" is by far the most entertaining way to learn a new language";
 	if (lang == "perl") html = "Thus far used almost entirely for school with only the occasional " +
 			"non-academic use.  Though learning Perl has greatly helped with my use of REGEX in every other language";
 	if (lang == "jsp") html = "I really enjoy coding in Java, so I was excited to expirement with JSP, but sadly I haven't had the " +
-			"opportunity to work with it on a large sized project yet";
+			"opportunity to work with it on larger sized projects yet";
 	if (lang == "mysql") html = "Nearly every project I've worked on has involved accessing MySQL databases";
 	if (lang == "ajax") html = "AJAX is used in nearly everything web related I code as " +
 			"it's critical to transition the feel from web-page to web-app";
