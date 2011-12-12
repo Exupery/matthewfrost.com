@@ -120,8 +120,8 @@ function getSummary(lang) {
 			"I've been using it more powerfully with each new project to create a feel more like an application than a web page";
 	if (lang == "csharp") html = "Primarily used C# to create an automated trading application that could easily interact " +
 			"with my brokerage's API. This was eventually abandoned in favor of a re-write in Java and using the FIX protocol to place trades";
-	if (lang == "ror") html = "My first app put into production was written in RoR.  Regardless of one's " +
-			"opinion on how well it scales, there's no arguing "+
+	if (lang == "ror") html = "My first app put into production was written in RoR.  I always enjoy learning new languages, " +
+			"but getting into RoR was great because "+
 			"<a href='http://railsforzombies.org/' target='_blank'><span class='atext'>Rails for Zombies</span></a>"+
 			" is by far the most entertaining way to learn a new language";
 	if (lang == "perl") html = "Thus far used almost entirely for school with only the occasional " +
