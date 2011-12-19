@@ -9,7 +9,15 @@ $(function() {
 			speed: 'fast',
 			width: 790
 		});
-	
+	$( "#wguframe" ).dialog({
+			autoOpen: false,
+			draggable: false,
+			resizable: false,
+			show: 'clip',
+			hide: 'clip',
+			speed: 'fast',
+			width: 790
+		});
 	$( "#maincontent" ).accordion({
 		autoHeight: false,
 		navigation: true,
@@ -80,6 +88,10 @@ $(document).ready(function() {
 
 function oom() {
 	$( "#oomframe" ).dialog('open');
+}
+
+function wgu() {
+	$( "#wguframe" ).dialog('open');
 }
 
 function updateChart(w, s, p, c) {

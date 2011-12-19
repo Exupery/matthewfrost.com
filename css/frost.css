@@ -7,13 +7,14 @@
 #headshot { float: right; padding-left: 20px; }
 #maincontent, #main { height: auto; min-height: 768px; }
 #oomimage { height: auto; width: 740px; }
-#projectdetails { padding-top: 10px; }
+#projectdetails { padding-top: 20px; }
 #sumhead { color: #111a4b; text-align: right; }
 #summary, #developmentprojectscontent { text-align: left; }
 #summarycontent .pop { height: 96px; padding: 5px; width: 96px; }
 #summarycontent .pop:hover { height: 106px; padding: 0px; width: 106px; }
 #summarytxt { height: 50px; }
 #tip { font-size: 0.75em; text-align: center; }
+#wguimage { height: auto; width: 740px; }
 .atext { color: #183c8f; }
 .atext:hover { color: #8790c7; }
 .blueonwhite { background-color: #FFFFFF; border-color: #06063c; border-radius: 4px; border-style: solid; border-width: 1px; color: #06063c; }
