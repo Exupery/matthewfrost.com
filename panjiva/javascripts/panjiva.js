@@ -10,16 +10,16 @@ $(document).ready(function() {
 
 $(function() {
 	$('html').mousemove(function(event) {
-		var btnPos = $('#btn').position();
+		var btnPos = $('#btn').offset(); //position
 		var xDist = btnPos.left - event.pageX;
 		var yDist = btnPos.top - event.pageY;
-		var moveX = 10;
-		var moveY = 10;
+		var moveX = 1;
+		var moveY = 1;
 		var timeCheck = event.timeStamp - lastMove;
 		//if (xDist > 0) console.log((xDist > 0)+" "+xDist);
 		//if (yDist > 0) console.log((yDist > 0)+" "+yDist);
-		var newX = (xDist > 0) ? btnPos.left + 1 : btnPos.left - moveX;
-		var newY = (yDist > 0) ? btnPos.top + 1 : btnPos.top - moveY;
+		var newX = (xDist > 0) ? btnPos.left + moveX : btnPos.left - moveX;
+		var newY = (yDist > 0) ? btnPos.top + moveY : btnPos.top - moveY;
 //		console.log(" xDist "+xDist+" btnPos.left "+btnPos.left+" moveX "+moveX+" newX "+newX);
 //		console.log(" xDist "+xDist+" xPrevDist "+xPrevDist+" yDist "+yDist+" yPrevDist "+yPrevDist);//+" "+btnPos.left+" "+btnPos.top);
 		if (((xDist > 0 && xPrevDist > xDist) && ((yDist >= 0 && yPrevDist >= yDist) || (yDist <= 0 && yPrevDist <= yDist)))
@@ -30,7 +30,7 @@ $(function() {
 //			if (timeCheck > 250 ) {
 				lastMove = event.timeStamp;
 				console.log("before left: "+$('#btn').css("left"));
-				$('#btn').css({left: newX, top: newY});
+				$('#btn').offset({left: newX, top: newY});
 				console.log("after left: "+$('#btn').css("left"));
 //			}
 		}
