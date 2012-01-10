@@ -6,6 +6,7 @@ var height = Number.MAX_VALUE;
 
 $(document).ready(function() {
 	$('button').button();
+	$('button').click(function() {alert("You clicked me!");});
 	width = $(document).width() - $('#btn').width();
 	height = $(document).height() - $('#btn').height();
 });
