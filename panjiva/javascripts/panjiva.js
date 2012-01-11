@@ -45,21 +45,21 @@ $(function() {
 });
 
 function delay(distance) {
-	if (distance < 100) {
+	if (distance < 25) {
 		return 0;
 	} else {
-		return Math.min(distance, 1000);
+		return Math.min(distance * 10, 2000);
 	}
 }
 
 function distanceModifier(distance) {
 	var px =  0;
 	if (distance < 25) {
-		px = 75;
+		px = 50;
 	} else if (distance < 125) {
-		px = 25;
+		px = 12;
 	} else if (distance < 250) {
-		px = 5;
+		px = 2;
 	} else if (distance < (width / 2)) {
 		px = 1;
 	}
