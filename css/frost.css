@@ -10,6 +10,7 @@
 #projectdetails { padding-top: 20px; }
 #sumhead { color: #111a4b; text-align: right; }
 #summary, #developmentprojectscontent { text-align: left; }
+#summarycontent p { width: 975px; text-align: center;} 
 #summarycontent .pop { height: 96px; padding: 5px; width: 96px; }
 #summarycontent .pop:hover { height: 106px; padding: 0px; width: 106px; }
 #summarytxt { height: 50px; }
