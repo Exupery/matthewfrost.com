@@ -32,6 +32,8 @@
 .projects { float: left; text-align: left; width: 275px; }
 .projtitle { font-size: 1.25em; height: auto; margin: 5px; padding: 5px; text-align: center; width: 200px; }
 .screenshot { cursor: pointer; float: right; height: auto; width: 200px; }
+.sumheadlink { color: #111a4b; }
+.sumheadlink:hover { color: #8790c7; }
 .whiteonblue { background-color: #06063c; border-color: #efeff2; border-radius: 4px; border-style: solid; border-width: 1px; color: #FFFFFF; }
 a { color: #183c8f; text-decoration: none; }
 a:hover { color: #8790c7; text-decoration: none; }
