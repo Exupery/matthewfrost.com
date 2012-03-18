@@ -30,6 +30,18 @@ $(function() {
 		updateFromChart(y);
 	});
 	
+	$( "#headercontent" ).click(function(){
+		$( '#maincontent' ).accordion( "activate" , 0 );
+	});
+	
+	$( ".langtech" ).mouseover(function(){
+		setSliders(this.id);
+	});
+	
+	$( ".projtitle" ).mouseover(function(){
+		displayFull(this.id);
+	});
+	
 });
 
 function updateFromChart(pos) {
@@ -48,14 +60,10 @@ function updateFromChart(pos) {
 }
 
 function displayFull(id) {
-	var idhtml = $( '#'+id ).html();
+	var idhtml = $( '#'+id+'full' ).html();
 	$( '#projectdetails' ).html(idhtml);
 	$( 'h2.projtitle' ).removeClass("whiteonblue").addClass("blueonwhite");
-	$( '#'+id+'heading' ).addClass("whiteonblue");
-}
-
-function openSummary() {
-	$( '#maincontent' ).accordion( "activate" , 0 );
+	$( '#'+id ).addClass("whiteonblue");
 }
 
 $(document).ready(function() {
@@ -124,12 +132,11 @@ function setSliders(lang) {
 
 function getSummary(lang) {
 	var html = "";
-	if (lang == "java") html = "My acedemics are focused largely on Java, and it's also used extensively in various personal " +
-			"trading applications, though only slightly at work, typically for small non-web based projects";
-	if (lang == "php") html = "For web based projects this is my most often used server side language, " +
-			"particularly at work due to ease of deployment and integration";
+	if (lang == "java") html = "My acedemics focused largely on Java, and I use it extensively in various personal " +
+			"trading applications";
+	if (lang == "php") html = "For web based projects this is my most often used server side language";
 	if (lang == "javascript") html = "JavaScript will probably be the most important language of the next decade, " +
-			"I've been using it more powerfully with each new project to create a feel more like an application than a web page";
+			"the full potential of the language remains untapped by most sites";
 	if (lang == "csharp") html = "Primarily used C# to create an automated trading application that could easily interact " +
 			"with my brokerage's API. This was eventually abandoned in favor of a re-write in Java and using the FIX protocol to place trades";
 	if (lang == "ror") html = "My first app put into production was written in RoR.  I always enjoy learning new languages, " +
