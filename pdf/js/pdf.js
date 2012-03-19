@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$('#download_link').attr('href', 'path');
 	$('#download_button').hide();
 });
 
