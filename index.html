@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/blue/jquery-ui-1.8.16.custom.css" />
 	</head> 
 	<body> 
-		<div id='header'class='center'>
+		<div id='header' class='center'>
 			<div id='headercontent' class='center content' >
 					<h1>Matthew Frost</h1>
 			</div>
@@ -21,7 +21,7 @@
 			<div id='maincontent' class='center content'>
 				<h3><a href='#summary'>Summary</a></h3>
 				<div id='summarycontent'>
-					<span id='headshot'><img src='images/headshot.jpg' /></span>
+					<span id='headshot'><img src='images/headshot.jpg' alt='Matthew Frost headshot' /></span>
 					<h3 id='sumhead'>Software Developer<br />
 						<a href='http://stopbadware.org/' target='_blank'><span  class='sumheadlink'>StopBadware</span></a>
 					</h3>
@@ -51,7 +51,7 @@
 					<img class='pop' src='images/foursquare.png' alt='foursquare' /></a>
 					<a href='http://www.linkedin.com/in/frostmatthew' target='_blank'>
 					<img class='pop' src='images/linkedin.png' alt='Connect with me on LinkedIn' /></a>
-					<script type='text/javascript' language='javascript'>
+					<script>
 					<!--
 						ML="<i=mMbnc @g:a/s'eErfto0.l\"pwdh>";
 						MI="0<8MB@C2I3<1HDE;3CBE>D93<DDM@KCBE>DG7E3IN013:8>B72I13<:@>=3<1HGJ6:I8<HD2IA3<1H84@I87H<>>2?JEJ?85EBL@B2FN0=<N";
@@ -76,7 +76,7 @@
 					    <span id='perl' class='langtech'>Perl</span>
 					    <span id='jsp' class='langtech'>JSP</span>
 					</div>
-					<br /><div id='tip'>(mouse over a technology to see sources of and relative amount of experience)</div><br />
+					<br /><div class='tip'>(mouse over a technology to see sources of and relative amount of experience)</div><br />
 					<div id='summary'>
 						<div id='summarytxt'></div>
 						<div id='charts'>
@@ -87,7 +87,7 @@
 				</div>
 				<h3><a href='#developmentprojects'>Development Projects</a></h3>
 				<div id='developmentprojectscontent'>
-					<div id='tip'>(mouse over for details)</div><br />
+					<div class='tip'>(mouse over for details)</div><br />
 					<div id='projecttitles' class='projects inline'>
 						<h2 id='oomtxt' class='projtitle pointer whiteonblue'>Optionometer</h2>
 						<h2 id='wgutxt' class='projtitle pointer whiteonblue'>Capstone Project</h2>						
@@ -98,7 +98,7 @@
 					<div id='projectdetails'></div>
 					<div id='projtexts' class='notvis'>
 						<span id='oomtxtfull'>
-							<img id='oomscreen' class='screenshot' src='images/oom.jpg' onClick='oom();' />
+							<img id='oomscreen' class='screenshot' src='images/oom.jpg' alt='optionometer thumbnail' onClick='oom();' />
 							Still under development <a href="http://www.optionometer.com/">
 							<span class='atext'>www.optionometer.com</span></a> is being created largely for my hobby of equity option trading. The
 							data presented represents a large amount of number crunching on the back-end (written in 
@@ -109,7 +109,7 @@
 							site retrieves the data via <span class='ital'>AJAX</span> calls. 
 						</span>
 						<span id='wgutxtfull'>
-							<img id='wguscreen' class='screenshot' src='images/wgu.png' onClick='wgu();'/>
+							<img id='wguscreen' class='screenshot' src='images/wgu.png' alt='WGU project thumbnail' onClick='wgu();'/>
 							Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a <span class='ital'>Java</span> application that predicts stock market movement 
 							based on Twitter activity.  The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral 
 							opinion based on the content of each post.  Each score is then adjusted for age of post and past accuracy of author 
@@ -135,8 +135,8 @@
 							the requested information from <span class='ital'>MySQL</span>.    
 						</span>
 					</div>
-					<div id='oomframe' class='center'><img id='oomimage' src='images/oom.jpg'/></div>
-					<div id='wguframe' class='center'><img id='wguimage' src='images/wgu.png'/></div>					
+					<div id='oomframe' class='center'><img id='oomimage' alt='optionometer screenshot' src='images/oom.jpg'/></div>
+					<div id='wguframe' class='center'><img id='wguimage' alt='WGU project screenshot' src='images/wgu.png'/></div>					
 				</div>
 				<h3><a href='#workexperience'>Work Experience</a></h3>
 				<div id='workexperience'>
@@ -161,7 +161,7 @@
 					Political Science<br />
 					<br /><hr /><br />
 					<h2>Certifications</h2>
-					<h4 class='c'><a href='http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=458&get_params=p_track_id:JSE6Prog' target='_blank'><span class='atext'>Oracle Certified Professional Java Programmer</span></a></h4>&nbsp;|
+					<h4 class='c'><a href='http://education.oracle.com/pls/web_prod-plq-dad/ou_certification_css.getexamdetail?p_exam_id=1Z0_851' target='_blank'><span class='atext'>Oracle Certified Professional Java Programmer</span></a></h4>&nbsp;|
 					<h4 class='c'><a href='http://www.ciwcertified.com/certifications/web_development_series/javascript.php' target='_blank'><span class='atext'>CIW JavaScript Specialist</span></a></h4>&nbsp;|
 					<h4 class='c'><a href='http://ciwcertified.com/Certifications/Web_Development_Series/perl.php' target='_blank'><span class='atext'>CIW Perl Specialist</span></a></h4>&nbsp;|
 					<h4 class='c'><a href='http://www.ciwcertified.com/certifications/web_development_series/database_design.php' target='_blank'><span class='atext'>CIW Database Specialist</span></a></h4>&nbsp;|

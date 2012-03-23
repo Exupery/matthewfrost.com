@@ -14,7 +14,6 @@
 #summarycontent .pop { height: 96px; padding: 5px; width: 96px; }
 #summarycontent .pop:hover { height: 106px; padding: 0px; width: 106px; }
 #summarytxt { height: 50px; }
-#tip { font-size: 0.75em; text-align: center; }
 #wguimage { height: auto; width: 740px; }
 .atext { color: #183c8f; }
 .atext:hover { color: #8790c7; }
@@ -34,6 +33,7 @@
 .screenshot { cursor: pointer; float: right; height: auto; width: 200px; }
 .sumheadlink { color: #111a4b; }
 .sumheadlink:hover { color: #8790c7; }
+.tip { font-size: 0.75em; text-align: center; }
 .whiteonblue { background-color: #06063c; border-color: #efeff2; border-radius: 4px; border-style: solid; border-width: 1px; color: #FFFFFF; }
 a { color: #183c8f; text-decoration: none; }
 a:hover { color: #8790c7; text-decoration: none; }
