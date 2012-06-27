@@ -17,6 +17,15 @@ $(function() {
 			speed: 'fast',
 			width: 790
 		});
+	$( '#cppframe' ).dialog({
+			autoOpen: false,
+			draggable: false,
+			resizable: false,
+			show: 'clip',
+			hide: 'clip',
+			speed: 'fast',
+			width: 790
+		});
 	$( '#maincontent' ).accordion({
 		autoHeight: false,
 		navigation: true,
@@ -55,4 +64,8 @@ function oom() {
 
 function wgu() {
 	$( '#wguframe' ).dialog('open');
+}
+
+function cpp() {
+	$( '#cppframe' ).dialog('open');
 }
