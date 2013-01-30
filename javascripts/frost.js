@@ -51,10 +51,6 @@ function displayFull(id) {
 }
 
 $(document).ready(function() {
-	$.gchart.setDefaults({
-		backgroundColor: '#e1e2ea',
-		titleColor: '#081530'
-	});
 	displayFull("oomtxt");
 });
 
