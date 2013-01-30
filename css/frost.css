@@ -62,7 +62,7 @@
 	text-align: left; 
 }
 #summarycontent p { 
-	width: 975px; 
+	width: 100%; 
 	text-align: center;
 } 
 #summarycontent .pop { 
