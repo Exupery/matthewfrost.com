@@ -158,9 +158,11 @@
 }
 .skill_name { 
 	font-size: 1.25em; 
+	float: left;
 }
 .skills_exp { 
 	display: inline; 
+	float: right;
 }
 .skills_exp .box {
 	border-color: #4658cf;
@@ -168,7 +170,7 @@
 	border-width: 0.125em;
 	width: 0.95em;
 	height: 0.95em;
-	float: right;
+	float: left;
 	margin: 0.15em;
 	
 }
