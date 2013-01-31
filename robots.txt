@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /images/
 Disallow: /misc/
+Disallow: /should/
