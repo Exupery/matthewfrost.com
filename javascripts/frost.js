@@ -40,19 +40,25 @@ $(function() {
 	$( ".projtitle" ).mouseover(function(){
 		displayFull(this.id);
 	});
-	
 });
 
 $(document).ready(function() {
 	drawSkills("skills");
-	displayFull("oomtxt");
+	displayFull("oom");
 });
 
+function showDialog(id) {
+	$( '#'+id ).dialog('open');
+}
+
 function displayFull(id) {
-	var idhtml = $( '#'+id+'full' ).html();
+	var idhtml = $( '#'+id+'txtfull' ).html();
 	$( '#projectdetails' ).html(idhtml);
 	$( 'h2.projtitle' ).removeClass('whiteonblue').addClass('blueonwhite');
 	$( '#'+id ).addClass('whiteonblue');
+	$("#"+id+"screen").click(function(){
+		showDialog(id+"frame");
+	});
 }
 
 function drawSkills(parent) {

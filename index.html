@@ -63,13 +63,13 @@
 				<div id='developmentprojectscontent'>
 					<div class='tip'>(mouse over for details)</div><br />
 					<div id='projecttitles' class='projects inline'>
-						<h2 id='chtxt' class='projtitle pointer blueonwhite'>Clearinghouse</h2>
-						<h2 id='oomtxt' class='projtitle pointer whiteonblue'>Optionometer</h2>
-						<h2 id='siftxt' class='projtitle pointer blueonwhite'>Should I Follow</h2>
-						<h2 id='wgutxt' class='projtitle pointer whiteonblue'>Capstone Project</h2>
-						<h2 id='cpptxt' class='projtitle pointer blueonwhite'>cppticker</h2>
-						<h2 id='tdtxt' class='projtitle pointer blueonwhite'>Trade Detective</h2>
-						<h2 id='qfmtxt' class='projtitle pointer blueonwhite'>Quote Flow Monitor</h2>
+						<h2 id='ch' class='projtitle pointer blueonwhite'>Clearinghouse</h2>
+						<h2 id='oom' class='projtitle pointer whiteonblue'>Optionometer</h2>
+						<h2 id='sif' class='projtitle pointer blueonwhite'>Should I Follow</h2>
+						<h2 id='wgu' class='projtitle pointer whiteonblue'>Capstone Project</h2>
+						<h2 id='cpp' class='projtitle pointer blueonwhite'>cppticker</h2>
+						<h2 id='td' class='projtitle pointer blueonwhite'>Trade Detective</h2>
+						<h2 id='qfm' class='projtitle pointer blueonwhite'>Quote Flow Monitor</h2>
 					</div>
 					<div id='projectdetails'></div>
 					<div id='projtexts' class='notvis'>
@@ -78,18 +78,18 @@
 							<p>The clearinghouse is being written in <span class='ital'>Java</span> and uses <span class='ital'>MongoDB</span> as a datastore with an initial front end done in Google's Web Toolkit. Both the Clearinghouse's API and the web-app are currently expected to be completed in early 2013</p>
 						</div>
 						<div id='oomtxtfull'>
-							<p><img id='oomscreen' class='screenshot' src='images/oom.jpg' alt='optionometer thumbnail' onClick='oom();' />Developed as a side project, <a href='http://www.optionometer.com/' class='atext'>www.optionometer.com</a> was created for my hobby of option trading. The data presented represented analysis of nearly half a million option spread combinations on the back-end (written in <span class='ital'>Java</span>). In an effort to find the most profitable option trades available the <span class='ital'>Java</span> app would constantly calculate potential multi-leg strategies throughout the trading day. Of the hundreds of thousands of possible combinations the app selected the best ones and passes those to a <span class='ital'>MySQL</span> database where the <span class='ital'>Ruby on Rails</span> front-end retrieved and displayed the data (sadly, continuing to keep the data updated didn't make economic sense at the end of AWS's free tier year).</p>
+							<p><img id='oomscreen' class='screenshot' src='images/oom.jpg' alt='optionometer thumbnail' />Developed as a side project, <a href='http://www.optionometer.com/' class='atext'>www.optionometer.com</a> was created for my hobby of option trading. The data presented represented analysis of nearly half a million option spread combinations on the back-end (written in <span class='ital'>Java</span>). In an effort to find the most profitable option trades available the <span class='ital'>Java</span> app would constantly calculate potential multi-leg strategies throughout the trading day. Of the hundreds of thousands of possible combinations the app selected the best ones and passes those to a <span class='ital'>MySQL</span> database where the <span class='ital'>Ruby on Rails</span> front-end retrieved and displayed the data (sadly, continuing to keep the data updated didn't make economic sense at the end of AWS's free tier year).</p>
 						</div>
 						<div id='siftxtfull'>
 							<p>Some colleagues and I were discussing the difficulty in assessing someone's Twitter activity just from glancing at their profile (because of replies and retweets). Thus was the motivation behind <a href='http://www.shouldifollow.com/' class='atext'>ShouldIFollow</a></p>
 							<p>A fairly simple <span class='ital'>Ruby on Rails</span> app running on <a href='http://www.heroku.com/' class='atext'>Heroku</a> it displays some metrics to get a feel for how frequently someone tweets. Open source and available for viewing/forking on <a href='https://github.com/Exupery/shouldifollow' class='atext'>GitHub</a></p>
 						</div>
 						<div id='wgutxtfull'>
-							<p><img id='wguscreen' class='screenshot' src='images/wgu.png' alt='WGU project thumbnail' onClick='wgu();'/>Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a <span class='ital'>Java</span> application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
+							<p id='foo'><img id='wguscreen' class='screenshot' src='images/wgu.png' alt='WGU project thumbnail' />Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a <span class='ital'>Java</span> application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
 							<p>My present side project is redoing this project in <span class='ital'>C++</span> in order to learn the language (as odd as this is to hear from someone who started coding in 2010 I really enjoy C++). This rewrite is viewable as an open source project on <a href='https://github.com/Exupery/MimirsWell' class='atext'>GitHub</a></p>
 						</div>
 						<div id='cpptxtfull'>
-							<p><img id='cppscreen' class='screenshot' src='images/cppticker.png' alt='cppticker thumbnail' onClick='cpp();'/>After finishing school I set a goal for myself to learn <span class='ital'>C++</span> with the hope of eventually being able to contribute to an open source game such as <a href='http://wildfiregames.com/0ad/' class='atext'>0 A.D.</a> After picking up the basics from a <a href='http://www.learncpp.com/' class='atext'>tutorial</a> I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href='https://github.com/Exupery/cppticker' class='atext'>GitHub</a>.</p>
+							<p><img id='cppscreen' class='screenshot' src='images/cppticker.png' alt='cppticker thumbnail' />After finishing school I set a goal for myself to learn <span class='ital'>C++</span> with the hope of eventually being able to contribute to an open source game such as <a href='http://wildfiregames.com/0ad/' class='atext'>0 A.D.</a> After picking up the basics from a <a href='http://www.learncpp.com/' class='atext'>tutorial</a> I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href='https://github.com/Exupery/cppticker' class='atext'>GitHub</a>.</p>
 						</div>						
 						<div id='tdtxtfull'>
 							<p>Designed to assist BT's Misison Control with trade audits, TradeDetective saves analysts a significant amount of time by bringing together the needed information on a trade investigation. Originally coded in <span class='ital'>Ruby on Rails</span> before a re-deployment in <span class='ital'>PHP</span> to facilitate better integration with other tools in use.</p>
@@ -146,7 +146,7 @@
 		</div>
 		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script> 
 		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js'></script> 
-		<script type='text/javascript' src='javascripts/frost.min.js'></script> 
+		<script type='text/javascript' src='javascripts/frost.js'></script> 
 		<script type='text/javascript'>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-25433508-1']);
