@@ -30,7 +30,14 @@ $(document).ready(function() {
 });
 
 function showDialog(id) {
-	$("#"+id ).dialog("open");
+	$("#"+id).dialog("open");
+	$("#"+id).click(function(event) {
+		event.stopPropagation();
+	});	
+}
+
+function hideDialog(id) {
+	$("#"+id).dialog("close");
 }
 
 function displayFull(id) {
@@ -38,7 +45,11 @@ function displayFull(id) {
 	$("#projectdetails").html(idhtml);
 	$("h2.projtitle").removeClass("whiteonblue").addClass("blueonwhite");
 	$("#"+id ).addClass("whiteonblue");
-	$("#"+id+"screen").click(function(){
+	$("body").click(function() {
+		hideDialog(id+"frame");
+	});
+	$("#"+id+"screen").click(function(event) {
+		event.stopPropagation();
 		showDialog(id+"frame");
 	});
 }
