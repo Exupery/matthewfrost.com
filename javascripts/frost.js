@@ -1,5 +1,5 @@
 $(function() {
-	$("#oomframe, #wguframe, #cppframe").dialog({
+	$(".screenshotframe").dialog({
 			autoOpen: false,
 			draggable: false,
 			resizable: false,
