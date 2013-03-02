@@ -198,6 +198,17 @@
 	font-size: 0.75em; 
 	text-align: center; 
 }
+.ui-dialog-titlebar-close {
+	display: none !important;
+}
+.ui-dialog-title {
+	font-size: 1.4em;
+	float: right !important;
+}
+.ui-dialog-title:hover {
+	cursor: pointer;
+	color: #e1e2ea;
+}
 .whiteonblue { 
 	background-color: #06063c; 
 	border-color: #efeff2; 

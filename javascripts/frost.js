@@ -8,7 +8,8 @@ $(function() {
 			speed: "fast",
 			closeOnEscape: true,
 			width: 790,
-			height: "auto"
+			height: "auto",
+			title: "X"
 		});
 	$("#maincontent").accordion({
 		heightStyle: "content",
