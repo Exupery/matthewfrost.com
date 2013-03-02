@@ -27,9 +27,6 @@ $(function() {
 			width: 790
 		});
 	$("#maincontent").accordion({
-		/*heightStyle: "auto",
-		collapsible: true,
-		animate: "bounceslide"*/
 		heightStyle: "content",
 		animate: "easeOutCubic"
 	});	
@@ -38,7 +35,7 @@ $(function() {
 		$("#maincontent").accordion("option", "active" , 0);
 	});
 	
-	$(".projtitle").mouseover(function(){
+	$(".projtitle").click(function(){
 		displayFull(this.id);
 	});
 });

@@ -45,6 +45,9 @@
 #projectdetails { 
 	padding-top: 0px; 
 }
+#projectdetails p { 
+	width: 95%; 
+}
 #skills {
 	margin-left: auto; 
 	margin-right: auto; 
@@ -55,7 +58,8 @@
 	color: #111a4b; 
 	text-align: right; 
 }
-#summary, #developmentprojectscontent { 
+#summary, 
+#developmentprojectscontent { 
 	text-align: left; 
 }
 #summarycontent p { 
@@ -147,11 +151,15 @@
 	text-align: center; 
 	width: 200px; 
 }
+.projtitle:hover {
+	background-color: #82829d;
+}
 .screenshot { 
 	cursor: pointer; 
 	float: right; 
 	height: auto; 
 	width: 200px; 
+	padding-left: 12px;
 }
 .skill { 
 	width: 250px;
