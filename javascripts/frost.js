@@ -27,14 +27,15 @@ $(function() {
 			width: 790
 		});
 	$("#maincontent").accordion({
-		autoHeight: false,
-		navigation: true,
-		collapsible: false,
-		animated: "bounceslide"
+		/*heightStyle: "auto",
+		collapsible: true,
+		animate: "bounceslide"*/
+		heightStyle: "content",
+		animate: "easeOutCubic"
 	});	
 	
 	$("#headercontent").click(function(){
-		$("#maincontent").accordion("activate" , 0);
+		$("#maincontent").accordion("option", "active" , 0);
 	});
 	
 	$(".projtitle").mouseover(function(){
