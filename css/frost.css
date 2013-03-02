@@ -62,8 +62,8 @@
 	text-align: left; 
 }
 #summarycontent p { 
-	width: 100%; 
-	text-align: center;
+	width: 950px; 
+	text-align: left;
 } 
 #summarycontent .pop { 
 	height: 96px; 
@@ -105,8 +105,7 @@
 }
 .content { 
 	background-color: #FFFFFF; 
-	min-width: 1075px; 
-	width: 60%; 
+	width: 1075px; 
 }
 .inline { 
 	display: inline; 
