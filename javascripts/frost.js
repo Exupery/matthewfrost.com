@@ -27,7 +27,7 @@ $(function() {
 
 $(document).ready(function() {
 	drawSkills("skills");
-	displayFull("oom");
+	displayFull("sif");
 });
 
 function showDialog(id) {
