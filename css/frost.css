@@ -10,9 +10,6 @@
 	margin-right: auto; 
 	text-align: center; 
 }
-#educationcertifications { 
-	height: 544px; 
-}
 #header { 
 	background-color: #06063c; 
 	height: 100px; 
@@ -90,9 +87,16 @@
 	border-width: 1px; 
 	color: #06063c; 
 }
-.c { 
-	display: inline; 
-	text-decoration: none; 
+#educationcertifications ul {
+	text-align: left;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#educationcertifications li { 
+	padding: 0;
+	margin: 0;
+	list-style-type: none; 
 }
 .center { 
 	margin-left: auto; 
