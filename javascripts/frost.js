@@ -1,30 +1,14 @@
 $(function() {
-	$("#oomframe").dialog({
+	$("#oomframe, #wguframe, #cppframe").dialog({
 			autoOpen: false,
 			draggable: false,
 			resizable: false,
 			show: "clip",
 			hide: "clip",
 			speed: "fast",
-			width: 790
-		});
-	$("#wguframe").dialog({
-			autoOpen: false,
-			draggable: false,
-			resizable: false,
-			show: "clip",
-			hide: "clip",
-			speed: "fast",
-			width: 790
-		});
-	$("#cppframe").dialog({
-			autoOpen: false,
-			draggable: false,
-			resizable: false,
-			show: "clip",
-			hide: "clip",
-			speed: "fast",
-			width: 790
+			closeOnEscape: true,
+			width: 790,
+			height: "auto"
 		});
 	$("#maincontent").accordion({
 		heightStyle: "content",
