@@ -20,8 +20,13 @@ $(function() {
 		$("#maincontent").accordion("option", "active" , 0);
 	});
 	
+	$(".sect_head").on("click", function() {
+  		ga("send", "event", "section_nav", this.id);
+	});
+
 	$(".projtitle").click(function(){
 		displayFull(this.id);
+		ga("send", "event", "project_disp", this.id);
 	});
 });
 
@@ -35,6 +40,7 @@ function showDialog(id) {
 	$("#"+id).click(function(event) {
 		event.stopPropagation();
 	});	
+	ga("send", "event", "dialog_open", id);
 }
 
 function hideDialog(id) {
