@@ -198,6 +198,7 @@
 	font-size: 0.75em; 
 	text-align: center; 
 }
+.no_vis,
 .ui-dialog-titlebar-close {
 	display: none !important;
 }
