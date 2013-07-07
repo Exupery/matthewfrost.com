@@ -33,8 +33,8 @@
 						<a href="https://www.stopbadware.org/"><span  class="sumheadlink">StopBadware</span></a>
 					</h3>
 					<p>What an amazing time to be a software engineer! As we stand on the precipice of the era focused on native applications and continue our transition toward web-based apps and mobile development. Not since the introduction of the PC itself have we seen such a fundamental shift in the use and impact of computers in our lives.</p>
-                    <p>A former banquet manager, I originally began learning to program only to assist in my hobby of stock trading with no intention of a career change, but soon it was clear I was enjoying the coding not because it would lead to better trading, but because I was truly <span class="ital">enjoying</span> writing code. It was then I decided my future lay not with hotels, but with helping to usher in this exciting new era.</p>
-                    <p>Presently the Software Engineer at StopBadware, where I design, build, and maintain the applications and databases that drive StopBadware's mission of making the Web safer through the prevention, mitigation, and remediation of badware websites. It is incredibly exciting and rewarding to do my small part in improving Web safety for everyone.</p>
+          <p>A former banquet manager, I originally began learning to program only to assist in my hobby of stock trading with no intention of a career change, but soon it was clear I was enjoying the coding not because it would lead to better trading, but because I was truly <span class="ital">enjoying</span> writing code. It was then I decided my future lay not with hotels, but with helping to usher in this exciting new era.</p>
+          <p>Presently the Software Engineer at StopBadware, where I design, build, and maintain the applications and databases that drive StopBadware's mission of making the Web safer through the prevention, mitigation, and remediation of badware websites. It is incredibly exciting and rewarding to do my small part in improving Web safety for everyone.</p>
 					<a href="https://www.twitter.com/frostmatthew">
 					<img class="pop" src="images/twitter_106.png" alt="Follow Matthew Frost on Twitter" /></a>
 					<a href="https://www.facebook.com/frostmatthew">
@@ -79,26 +79,26 @@
 						</div>
 						<div id="chtxtfull">
 							<p>StopBadware's Badware Data Sharing Program, currently in its pilot phase "...aims to improve security researchers' and practitioners' access to quality, timely data. Participants provide StopBadware with an automated feed of time-stamped badware URLs and related data. The data is shared with other participants and with vetted academic and non-commercial researchers. Data is also used by StopBadware to inform our independent review process, to generate aggregated data, to identify and report on badware trends, and to communicate with site owners and service providers (e.g., Web hosting providers) about badware within their zones of control..." [Excerpt from <a href="https://www.stopbadware.org/data-sharing" class="atext">stopbadware.org/data-sharing</a>]</p>
-							<p>The Data Sharing Program is three separate <span class="ital">Java</span> applications, communicating via combination of API and Iron.io's <a href="http://www.iron.io/mq" class="atext">IronMQ</a> message queues. An importer to retrieve the participants data, a resolver to resolve all hosts to IPs and all IPs to Autonomous Systems, and the API that provides access to the data (<span class="ital">MongoDB</span> is used as a datastore).</p>
+							<p>The Data Sharing Program is three separate <span class="ital">Java</span> applications, communicating via combination of API and Iron.io's <a href="http://www.iron.io/mq" class="atext">IronMQ</a> message queues. An importer to retrieve the participants data, a resolver to resolve all hosts to IPs and all IPs to Autonomous Systems, and the API that provides access to the data (<span class="ital">MongoDB</span> is used as a datastore). While the primary means of accessing the data is via API in Summer 2013 work began on a <span class="ital">Play</span> for <span class="ital">Scala</span> web-app.</p>
 						</div>
 						<div id="oomtxtfull">
 							<p><img id="oomscreen" class="screenshot" src="images/oom.jpg" alt="optionometer thumbnail" />Developed as a side project, <a href="http://www.optionometer.com/" class="atext">www.optionometer.com</a> was created for my hobby of option trading. The data presented represented analysis of nearly half a million option spread combinations on the back-end (written in <span class="ital">Java</span>). In an effort to find the most profitable option trades available the <span class="ital">Java</span> app would constantly calculate potential multi-leg strategies throughout the trading day. Of the hundreds of thousands of possible combinations the app selected the best ones and passes those to a <span class="ital">MySQL</span> database where the <span class="ital">Ruby on Rails</span> front-end retrieved and displayed the data (sadly, continuing to keep the data updated didn't make economic sense at the end of AWS's free tier year).</p>
 						</div>
 						<div id="wgutxtfull">
 							<p><img id="wguscreen" class="screenshot" src="images/wgu.png" alt="WGU project thumbnail" />Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a <span class="ital">Java</span> application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
-							<p>My present side project is redoing this project in <span class="ital">C++</span> in order to learn the language (as odd as this is to hear from someone who started coding in 2010 I really enjoy C++). This rewrite is viewable as an open source project on <a href="https://github.com/Exupery/MimirsWell" class="atext">GitHub</a></p>
+							<p>As a side project I toyed around with redoing this project in <span class="ital">C++</span> in order to learn the language (as odd as this is to hear from someone who started coding in 2010 I really enjoy C++). This rewrite is viewable as an open source project on <a href="https://github.com/Exupery/MimirsWell" class="atext">GitHub</a>, though I never completed work on it as I ended up shifting my free time to focus on other side projects.</p>
 						</div>
 						<div id="cpptxtfull">
-							<p><img id="cppscreen" class="screenshot" src="images/cppticker.png" alt="cppticker thumbnail" />After finishing school I set a goal for myself to learn <span class="ital">C++</span> with the hope of eventually being able to contribute to an open source game such as <a href="http://wildfiregames.com/0ad/" class="atext">0 A.D.</a> After picking up the basics from a <a href="http://www.learncpp.com/" class="atext">tutorial</a> I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href="https://github.com/Exupery/cppticker" class="atext">GitHub</a>.</p>
+							<p><img id="cppscreen" class="screenshot" src="images/cppticker.png" alt="cppticker thumbnail" />After finishing school I set a goal for myself to learn <span class="ital">C++</span>. After picking up the basics from a tutorial I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href="https://github.com/Exupery/cppticker" class="atext">GitHub</a>.</p>
 						</div>						
 						<div id="tdtxtfull">
-							<p>Designed to assist BT's Misison Control with trade audits, TradeDetective saves analysts a significant amount of time by bringing together the needed information on a trade investigation. Originally coded in <span class="ital">Ruby on Rails</span> before a re-deployment in <span class="ital">PHP</span> to facilitate better integration with other tools in use.</p>
+							<p>Designed to assist BT's Misison Control with trade audits, TradeDetective saves analysts a significant amount of time by bringing together the needed information on a trade investigation. Originally coded in <span class="ital">Ruby on Rails</span> before a re-write in <span class="ital">PHP</span> to facilitate better integration with other tools in use.</p>
 							<p>Similar to the above, BBO Detective was created to match trades that can go through multiple liquidity providers (such as in BT's best bid/best offer system). Also completed in <span class="ital">PHP</span>, though it utilizes heavier use of <span class="ital">JavaScript</span> to shift more of the processing client-side.</p>
 						</div>
 						<div id="qfmtxtfull">
 							<p>This web-app introduced a scalable solution for BT's Mission Control to monitor proper feeding of FOREX quotes. On a single page an analyst can monitor every security on every server with both visual and audible warnings
 							for quotes not updating as expected. This web-app is written almost entirely in <span class="ital">JavaScript</span>, 
-							with only a minimal amount of <span class="ital">HTML</span> framework and a <span class="ital">PHP</span> 
+							with only a minimal amount of a <span class="ital">PHP</span> 
 							back-end that serves only to respond to <span class="y">AJAX</span> calls and retrieve
 							the requested information from <span class="ital">MySQL</span>.</p>    
 						</div>
@@ -175,6 +175,6 @@
 
 		</script>
 		<script src="https://d2zh9g63fcvyrq.cloudfront.net/adn.js"></script>
-		<script type="text/javascript" src="javascripts/frost.min.js?1367175331"></script>
+		<script type="text/javascript" src="javascripts/frost.min.js?1373203361"></script>
 	</body> 
 </html> 

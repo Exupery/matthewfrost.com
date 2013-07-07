@@ -62,12 +62,26 @@ function displayFull(id) {
 }
 
 function drawSkills(parent) {
-	var skills = ["Java","Ruby","JavaScript","PHP","Lua","C++","C#","Perl","MySQL","MongoDB","JSP","jQuery","Scala","AWS","Rails","Apex","CSS","Tomcat"];
-	var exp = [/*"Java"*/5,/*"Ruby"*/3,/*"JavaScript"*/4,/*"PHP"*/4,/*"Lua"*/2,/*"C++"*/2,/*"C#"*/2,/*"Perl"*/2,/*"MySQL"*/4,/*"MongoDB"*/3,/*"JSP"*/2,/*"jQuery"*/4,/*"Scala"*/1,/*"AWS"*/1,/*"Rails"*/3,/*"Apex"*/2,/*"CSS"*/4,/*"Tomcat"*/3];
-
+	var skills = [
+		["Java",5],
+		["Ruby",4],
+		["JavaScript",4],
+		["Scala",3],
+		["PHP",4],
+		["Lua",2],
+		["C++",2],
+		["C#",2],
+		["Perl",2],
+		["MySQL",5],
+		["MongoDB",3],
+		["JSP",2],
+		["jQuery",4],
+		["Play",2],
+		["Rails",3]
+	];
 	var html = "";
 	for (var i=0; i<skills.length; i++) {
-		html += drawSkill(skills[i], exp[i]);
+		html += drawSkill(skills[i][0], skills[i][1]);
 	}
 
 	$("#"+parent).html(html);
