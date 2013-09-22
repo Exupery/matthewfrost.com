@@ -89,8 +89,8 @@ function drawSkills(parent) {
 
 function drawSkill(skill, exp) {
 	var html = 	"<div class=\"skill\">"+
-			    "<span class=\"skill_name\">"+skill+"</span>"+
-				"<div class=\"skills_exp\">";
+			    "<span class=\"skill-name\">"+skill+"</span>"+
+				"<div class=\"skills-exp\">";
 	for (var i=0; i<5; i++) {
 		if (exp > i) {
 			html += "<div class=\"box filled\"></div>"

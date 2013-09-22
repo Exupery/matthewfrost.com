@@ -55,9 +55,11 @@
 	text-align: center; 
 	width: 90%;
 }
-#sumhead { 
+.sumhead { 
 	color: #111a4b; 
-	text-align: right; 
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 #summary, 
 #developmentprojectscontent { 
@@ -168,15 +170,15 @@
 	text-align: left;
 	padding-left: 2.75em;
 }
-.skill_name { 
+.skill-name { 
 	font-size: 1.25em; 
 	float: left;
 }
-.skills_exp { 
+.skills-exp { 
 	display: inline; 
 	float: right;
 }
-.skills_exp .box {
+.skills-exp .box {
 	border-color: #4658cf;
 	border-style: solid;
 	border-width: 0.125em;
@@ -186,7 +188,7 @@
 	margin: 0.15em;
 	
 }
-.skills_exp .filled { 
+.skills-exp .filled { 
 	background-color: #4658cf; 
 }
 .sumheadlink { 
@@ -199,7 +201,6 @@
 	font-size: 0.75em; 
 	text-align: center; 
 }
-.no_vis,
 .ui-dialog-titlebar-close {
 	display: none !important;
 }
