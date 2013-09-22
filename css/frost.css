@@ -197,6 +197,13 @@
 .sumheadlink:hover { 
 	color: #8790c7; 
 }
+#skills-expl {
+	width: 50%;
+	float: right;
+	font-size: 0.9em;
+	text-align: right;
+	margin-top: 1em;
+}
 .tip { 
 	font-size: 0.75em; 
 	text-align: center; 
