@@ -1,256 +1,60 @@
-#border { 
-	border-bottom-color: #06063c; 
-	border-bottom-style: solid; 
-	border-bottom-width: 1px; 
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+html, body {
+	background-color: #000000;
+	font-family: 'Oswald', sans-serif;
+	color: #FFCC66;
 }
-#charts { 
-	background-color: #e1e2ea; 
-	height: 415px; 
-	margin-left: auto; 
-	margin-right: auto; 
-	text-align: center; 
+
+h1 {
+	font-size: 2.5em;
 }
-#header { 
-	background-color: #06063c; 
-	height: 100px; 
-	margin: 0px; 
-	padding-top: 0px; 
-	width: 100%; 
+
+#name {
+	margin-bottom: 0.2em;
 }
-#headercontent { 
-	background-color: #06063c; 
-	height: 100px; 
-	line-height: 100px; 
+
+#title {
+	margin-top: 0em;
+	margin-bottom: 0.25em;
 }
-#headercontent h1 { 
-	color: #FFFFFF; 
-	cursor: default; 
-	font-family: "Trebuchet MS", Helvetica, sans-serif; 
-	font-size: 3.5em; 
-	font-style: italic; 
-	margin: 0px; 
+
+.with-border {
+	border-color: #FF9900;
+	background-color: #FF9900;
+	border-left-style: solid;
+	border-left-width: 8em;
+	margin-bottom: 0.5em;
 }
-#headshot { 
-	float: right; 
-	padding-left: 20px; 
+
+.with-bottom-left-border {
+	border-bottom-style: solid;
+	border-bottom-width: 1em;
+	border-bottom-left-radius: 2em;
 }
-#maincontent, #main { 
-	height: auto; 
-	min-height: 768px;
-	padding-bottom: 1em;
+
+.with-top-left-border {
+	border-top-style: solid;
+	border-top-width: 1em;
+	border-top-left-radius: 2em;
 }
-#oomimage { 
-	height: auto; 
-	width: 740px; 
+
+#heading.with-border {
+	border-color: #9999CC;
+	background-color: #9999CC;
 }
-#projectdetails { 
-	padding-top: 0px; 
+
+.inner-border {
+	height: 100%;
+	border-color: #000000;
+	background-color: #000000;
+	border-left-style: solid;
+	border-left-width: 1.75em;
 }
-#projectdetails p { 
-	width: 95%; 
+
+.with-bottom-left-border .inner-border {
+	border-bottom-left-radius: 2em;
 }
-#skills {
-	margin-left: auto; 
-	margin-right: auto; 
-	text-align: center; 
-	width: 90%;
-}
-.sumhead { 
-	color: #111a4b; 
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-#summary, 
-#developmentprojectscontent { 
-	text-align: left; 
-}
-#summarycontent p { 
-	width: 950px; 
-	text-align: left;
-} 
-#summarycontent .pop { 
-	height: 96px; 
-	padding: 5px; 
-	width: 96px; 
-}
-#summarycontent .pop:hover { 
-	height: 106px; 
-	padding: 0px; 
-	width: 106px; 
-}
-#summarytxt { 
-	height: 50px; 
-}
-#wguimage { 
-	height: auto; 
-	width: 740px; 
-}
-.blueonwhite { 
-	background-color: #FFFFFF; 
-	border-color: #06063c; 
-	border-radius: 4px; 
-	border-style: solid; 
-	border-width: 1px; 
-	color: #06063c; 
-}
-#educationcertifications ul {
-	text-align: left;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-}
-#educationcertifications li { 
-	padding: 0;
-	margin: 0;
-	list-style-type: none; 
-}
-.center { 
-	margin-left: auto; 
-	margin-right: auto; 
-	text-align: center; 
-}
-.chart { 
-	height: 395px; 
-	width: 395px; 
-}
-.content { 
-	background-color: #FFFFFF; 
-	width: 1075px; 
-}
-.inline { 
-	display: inline; 
-}
-.ital { 
-	font-style: italic; 
-}
-.langtech { 
-	color: #343b52; 
-	cursor: pointer; 
-	display: inline; 
-	font-size: 1.15em; 
-	padding: 5px; 
-}
-.langtech:hover { 
-	color: #173db9; 
-	cursor: pointer; 
-}
-.notvis { 
-	display: none; 
-}
-.pointer { 
-	cursor: pointer; 
-}
-.projects { 
-	float: left; 
-	text-align: left; 
-	width: 275px; 
-}
-.projtitle { 
-	font-size: 1.25em; 
-	height: auto; 
-	margin: 5px; 
-	padding: 5px; 
-	text-align: center; 
-	width: 200px; 
-}
-.projtitle:hover {
-	background-color: #cdcdd7;
-}
-.screenshot { 
-	cursor: pointer; 
-	float: right; 
-	height: auto; 
-	width: 200px; 
-	padding-left: 12px;
-}
-.skill { 
-	width: 250px;
-	float: left; 
-	text-align: left;
-	padding-left: 2.75em;
-}
-.skill-name { 
-	font-size: 1.25em; 
-	float: left;
-}
-.skills-exp { 
-	display: inline; 
-	float: right;
-}
-.skills-exp .box {
-	border-color: #4658cf;
-	border-style: solid;
-	border-width: 0.125em;
-	width: 0.95em;
-	height: 0.95em;
-	float: left;
-	margin: 0.15em;
-	
-}
-.skills-exp .filled { 
-	background-color: #4658cf; 
-}
-.sumheadlink { 
-	color: #111a4b; 
-}
-.sumheadlink:hover { 
-	color: #8790c7; 
-}
-#skills-expl {
-	width: 50%;
-	float: right;
-	font-size: 0.9em;
-	text-align: right;
-	margin-top: 1em;
-}
-.tip { 
-	font-size: 0.75em; 
-	text-align: center; 
-}
-.ui-dialog-titlebar-close {
-	display: none !important;
-}
-.ui-dialog-title {
-	font-size: 1.4em;
-	float: right !important;
-}
-.ui-dialog-title:hover {
-	cursor: pointer;
-	color: #e1e2ea;
-}
-.whiteonblue { 
-	background-color: #06063c; 
-	border-color: #efeff2; 
-	border-radius: 4px; 
-	border-style: solid; 
-	border-width: 1px; 
-	color: #FFFFFF; 
-}
-.shadow {
-  -webkit-box-shadow: 4px 8px 25px rgba(13, 51, 63, 0.5);
-  -moz-box-shadow: 4px 8px 25px rgba(13, 51, 63, 0.5);
-  box-shadow: 4px 8px 25px rgba(13, 51, 63, 0.5); 
-}
-.atext { 
-	color: #183c8f !important; 
-}
-.atext:hover { 
-	color: #8790c7 !important; 
-}
-a { 
-	color: #183c8f; 
-	text-decoration: none; 
-}
-a:hover { 
-	color: #8790c7; 
-	text-decoration: none; 
-}
-html, body { 
-	background-color: #FFFFFF; 
-	color: #06063c; 
-	height: 100%; 
-	margin: 0px; 
-	min-width: 1100px; 
-	padding: 0px; 
+
+.with-top-left-border .inner-border {
+	border-top-left-radius: 2em;
 }
