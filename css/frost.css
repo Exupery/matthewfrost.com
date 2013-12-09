@@ -1,8 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
-html, body {
+html, body, #container {
 	background-color: #000000;
 	font-family: 'Oswald', sans-serif;
 	color: #FFCC66;
+	height: calc(100% - 3em);
+}
+
+body > #container {
+	height: auto;
+	min-height: 100%;
+}
+
+#footer {
+	clear: both;
+	position: relative;
+	height: 3em;
+	margin-top: -1em;
 }
 
 h1 {
