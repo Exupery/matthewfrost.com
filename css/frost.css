@@ -71,3 +71,39 @@ h1 {
 .with-top-left-border .inner-border {
 	border-top-left-radius: 2em;
 }
+
+.inline {
+	display: inline-block;
+}
+
+.button,
+.button a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.button {
+	font-size: 1.5em;
+	background-color: #CC99CC;
+	padding: 0.25em;
+	margin-top: 0.65em;
+	margin-bottom: 0.55em;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: #CC6666;
+	color: #000000;	
+}
+
+.left-end {
+	padding-left: 1em;
+	border-bottom-left-radius: 1em;
+	border-top-left-radius: 1em;
+}
+
+.right-end {
+	padding-right: 1em;
+	border-bottom-right-radius: 1em;
+	border-top-right-radius: 1em;
+}
