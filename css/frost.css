@@ -47,7 +47,7 @@ h1 {
 
 .with-top-left-border {
 	border-top-style: solid;
-	border-top-width: 1em;
+	border-top-width: 1.2em;
 	border-top-left-radius: 2em;
 }
 
@@ -106,4 +106,38 @@ h1 {
 	padding-right: 1em;
 	border-bottom-right-radius: 1em;
 	border-top-right-radius: 1em;
+}
+
+.nav {
+	width: 4.85em;
+	margin-top: 0em;
+	margin-bottom: 0.15em;
+	background-color: #9999CC;
+}
+
+.nav a {
+	padding-right: 3em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.ui-state-active {
+	background-color: #FF9966;
+}
+
+#content {
+	min-height: 10em;
+}
+
+.ui-tabs-panel {
+	/*padding: 1em; 
+	float: right; 
+	width: 40em;*/
+}
+
+.ui-tabs-nav {
+	margin-top: 0em;
+	padding-left: 0em;
+	float: left; 
+	width: 12em;
 }

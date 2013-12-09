@@ -11,10 +11,15 @@ $(function() {
 			height: "auto",
 			title: "X"
 		});
-	$("#maincontent").accordion({
+
+	$("#content").tabs({
 		heightStyle: "content",
 		animate: "easeOutCubic"
 	});	
+
+	$(".nav a").focus(function() {
+		$(this).blur();
+	});
 	
 	$("#headercontent").click(function(){
 		$("#maincontent").accordion("option", "active" , 0);
@@ -31,8 +36,8 @@ $(function() {
 });
 
 $(document).ready(function() {
-	drawSkills("skills");
-	displayFull("sif");
+	/*drawSkills("skills");*/
+	/*displayFull("sif");*/
 });
 
 function showDialog(id) {
