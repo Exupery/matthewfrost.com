@@ -137,27 +137,28 @@ h1 {
 	width: calc(100% - 0.4em);
 }
 
-#content {
+#main {
 	min-height: 20em;
 	border-left-style: solid;
 	border-left-width: 8em;
 	margin-bottom: 2em;
+	max-width: 1600px;
 }
 
-#content .button {
+#main .button {
 	padding: 0;
 }
 
-#content p {
+.content {
 	font-size: 1.1em;
 }
 
-#content p a {
+.content a {
 	color: #FF9966;
 	text-decoration: none;
 }
 
-#content p a:hover {
+.content a:hover {
 	color: #9999CC;	
 	text-decoration: underline;	
 }
@@ -180,8 +181,8 @@ h1 {
 }
 
 .skill { 
-  margin-left: 1em;
-	margin-right: 3em;
+  margin-left: 0.75em;
+	margin-right: 2.75em;
 }
 
 .skill-name { 
@@ -197,8 +198,8 @@ h1 {
 .skills-xp .box {
   border-style: solid;
   border-width: 0.1em;
-  width: 1em;
-  height: 1em;
+  width: 1.1em;
+  height: 1.1em;
   margin: 0.15em;
 }
 

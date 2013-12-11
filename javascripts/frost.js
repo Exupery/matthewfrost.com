@@ -12,7 +12,7 @@ $(function() {
 			title: "X"
 		});
 
-	$("#content").tabs({
+	$("#main").tabs({
 		heightStyle: "content",
 		animate: "easeOutCubic"
 	});	
