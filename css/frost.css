@@ -23,6 +23,10 @@ h1 {
 	font-size: 2.5em;
 }
 
+h2 {
+	color: #FF9900;
+}
+
 .ital {
 	font-style: italic;
 }
@@ -205,4 +209,15 @@ h1 {
 
 .skills-xp .filled { 
   background-color: #FF9966; 
+}
+
+.title::after,
+.major::after {
+	content: " -";
+	font-size: 0.95em;
+	padding: 0.25em;
+}
+
+.dates {
+	margin-bottom: 1.2em;
 }
