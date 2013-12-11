@@ -22,6 +22,10 @@ h1 {
 	font-size: 2.5em;
 }
 
+.ital {
+	font-style: italic;
+}
+
 #name {
 	margin-bottom: 0.2em;
 }
@@ -76,6 +80,11 @@ h1 {
 	display: inline-block;
 }
 
+.button {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
 .button,
 .button a {
 	color: #000000;
@@ -85,9 +94,10 @@ h1 {
 .button {
 	font-size: 1.5em;
 	background-color: #CC99CC;
-	padding: 0.25em;
-	margin-top: 0.65em;
-	margin-bottom: 0.55em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
 }
 
 .button:hover {
@@ -109,35 +119,57 @@ h1 {
 }
 
 .nav {
-	width: 4.85em;
 	margin-top: 0em;
 	margin-bottom: 0.15em;
 	background-color: #9999CC;
 }
 
 .nav a {
-	padding-right: 3em;
+	display: inline-block;
 	padding-top: 0.25em;
 	padding-bottom: 0.25em;
+	padding-left: 0.4em;
+	width: calc(100% - 0.4em);
+}
+
+#content {
+	min-height: 20em;
+	border-left-style: solid;
+	border-left-width: 8em;
+	margin-bottom: 2em;
+}
+
+#content .button {
+	padding: 0;
+}
+
+#content p {
+	font-size: 1.1em;
+}
+
+#content p a {
+	color: #FF9966;
+	text-decoration: none;
+}
+
+#content p a:hover {
+	color: #9999CC;	
+	text-decoration: underline;	
 }
 
 .ui-state-active {
 	background-color: #FF9966;
 }
 
-#content {
-	min-height: 10em;
-}
-
 .ui-tabs-panel {
-	/*padding: 1em; 
-	float: right; 
-	width: 40em;*/
 }
 
 .ui-tabs-nav {
 	margin-top: 0em;
 	padding-left: 0em;
 	float: left; 
-	width: 12em;
+	width: 8em;
+	margin-left: -8em;
+	margin-right: 3em;
+	background-color: #000000;
 }
