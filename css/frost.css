@@ -4,6 +4,7 @@ html, body, #container {
 	font-family: 'Oswald', sans-serif;
 	color: #FFCC66;
 	height: calc(100% - 3em);
+	min-width: 560px;
 }
 
 body > #container {
@@ -24,6 +25,10 @@ h1 {
 
 .ital {
 	font-style: italic;
+}
+
+.clear {
+	clear: both;
 }
 
 #name {
@@ -162,6 +167,7 @@ h1 {
 }
 
 .ui-tabs-panel {
+	margin-left: 3em;
 }
 
 .ui-tabs-nav {
@@ -170,6 +176,31 @@ h1 {
 	float: left; 
 	width: 8em;
 	margin-left: -8em;
-	margin-right: 3em;
 	background-color: #000000;
+}
+
+.skill { 
+  margin-left: 1em;
+	margin-right: 3em;
+}
+
+.skill-name { 
+  font-size: 1.25em;
+  float: left; 
+}
+
+.skills-xp { 
+	margin-left: 6em;
+}
+
+.skills-xp .box {
+  border-style: solid;
+  border-width: 0.1em;
+  width: 1em;
+  height: 1em;
+  margin: 0.15em;
+}
+
+.skills-xp .filled { 
+  background-color: #FF9966; 
 }

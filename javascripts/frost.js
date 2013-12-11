@@ -36,7 +36,7 @@ $(function() {
 });
 
 $(document).ready(function() {
-	/*drawSkills("skills");*/
+	drawSkills("skills-boxes");
 	/*displayFull("sif");*/
 });
 
@@ -69,18 +69,17 @@ function displayFull(id) {
 function drawSkills(parent) {
 	var skills = [
 		["Java",5],
-		["Ruby",4],
-		["JavaScript",4],
-		["Scala",3],
-		["PHP",4],
-		["Lua",2],
+		["Scala",4],
+		["Ruby",3],
+		["PHP",3],
 		["C++",2],
-		["C#",1],
+		["JavaScript",4],
+		["Lua",2],
 		["Perl",1],
 		["MySQL",5],
+		["PostgreSQL",2],
 		["MongoDB",3],
 		["Redis",2],
-		["jQuery",4],
 		["Play",2],
 		["Rails",3]
 	];
@@ -93,14 +92,14 @@ function drawSkills(parent) {
 }
 
 function drawSkill(skill, exp) {
-	var html = 	"<div class=\"skill\">"+
-			    "<span class=\"skill-name\">"+skill+"</span>"+
-				"<div class=\"skills-exp\">";
+	var html = 	"<div class=\"skill inline\">"+
+			    "<div class=\"skill-name\">"+skill+"</div>"+
+				"<div class=\"skills-xp\">";
 	for (var i=0; i<5; i++) {
 		if (exp > i) {
-			html += "<div class=\"box filled\"></div>"
+			html += "<div class=\"inline box filled\"></div>"
 		} else {
-			html += "<div class=\"box\"></div>"
+			html += "<div class=\"inline box\"></div>"
 		}
 	}
 	html += "</div></div>";
