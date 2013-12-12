@@ -94,9 +94,14 @@ h2 {
 	display: inline-block;
 }
 
+.nav.ui-state-active,
+#project-nav li.ui-state-active {
+	background-color: #FF9966;
+}
+
 .button,
 .button a,
-#projects li a {
+#project-nav li a {
 	color: #000000;
 	text-decoration: none;
 }
@@ -140,8 +145,11 @@ h2 {
 	padding-left: 0em;
 }
 
+#projects li {
+	font-size: 1.1em;
+}
+
 #projects li a {
-	font-size: 0.75em;
 	padding: 0.25em;
 }
 
@@ -184,11 +192,6 @@ h2 {
 .content a:hover {
 	color: #9999CC;	
 	text-decoration: underline;	
-}
-
-.ui-state-active,
-#projects li.ui-state-active {
-	background-color: #FF9966;
 }
 
 .ui-tabs-panel {
