@@ -27,6 +27,11 @@ h2 {
 	color: #FF9900;
 }
 
+#main h2,
+#projects ul {
+	margin-top: 0em;
+}
+
 .ital {
 	font-style: italic;
 }
@@ -89,13 +94,9 @@ h2 {
 	display: inline-block;
 }
 
-.button {
-	padding-left: 0.25em;
-	padding-right: 0.25em;
-}
-
 .button,
-.button a {
+.button a,
+#projects li a {
 	color: #000000;
 	text-decoration: none;
 }
@@ -103,13 +104,13 @@ h2 {
 .button {
 	font-size: 1.5em;
 	background-color: #CC99CC;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding: 0.25em;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
 }
 
-.button:hover {
+.button:hover,
+#project-nav li:hover {
 	cursor: pointer;
 	background-color: #CC6666;
 	color: #000000;	
@@ -127,7 +128,25 @@ h2 {
 	border-top-right-radius: 1em;
 }
 
-.nav {
+#projects li .left-end {
+	padding-left: 0.75em;
+}
+
+#projects li .right-end {
+	padding-right: 0.75em;
+}
+
+#projects ul {
+	padding-left: 0em;
+}
+
+#projects li a {
+	font-size: 0.75em;
+	padding: 0.25em;
+}
+
+.nav,
+#project-nav li {
 	margin-top: 0em;
 	margin-bottom: 0.15em;
 	background-color: #9999CC;
@@ -150,7 +169,7 @@ h2 {
 }
 
 #main .button {
-	padding: 0;
+	padding: 0em;
 }
 
 .content {
@@ -167,7 +186,8 @@ h2 {
 	text-decoration: underline;	
 }
 
-.ui-state-active {
+.ui-state-active,
+#projects li.ui-state-active {
 	background-color: #FF9966;
 }
 
@@ -175,7 +195,7 @@ h2 {
 	margin-left: 3em;
 }
 
-.ui-tabs-nav {
+#main-nav.ui-tabs-nav {
 	margin-top: 0em;
 	padding-left: 0em;
 	float: left; 
@@ -220,4 +240,8 @@ h2 {
 
 .dates {
 	margin-bottom: 1.2em;
+}
+
+#dsp ul	 {
+	margin-left: 1.5em;
 }

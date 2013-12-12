@@ -12,17 +12,13 @@ $(function() {
 			title: "X"
 		});
 
-	$("#main").tabs({
+	$("#main, #projects").tabs({
 		heightStyle: "content",
 		animate: "easeOutCubic"
 	});	
 
-	$(".nav a").focus(function() {
+	$(".nav a, #projects li a").focus(function() {
 		$(this).blur();
-	});
-	
-	$("#headercontent").click(function(){
-		$("#maincontent").accordion("option", "active" , 0);
 	});
 	
 	$(".sect_head").on("click", function() {
@@ -37,7 +33,6 @@ $(function() {
 
 $(document).ready(function() {
 	drawSkills("skills-boxes");
-	/*displayFull("sif");*/
 });
 
 function showDialog(id) {

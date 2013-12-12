@@ -46,7 +46,7 @@
 		</div>
 
 		<div id="main">
-			<ul>
+			<ul id="main-nav">
 				<li class="nav button"><a href="#summary">Summary</a></li>
 				<li class="nav button"><a href="#skills">Skills</a></li>
 				<li class="nav button"><a href="#projects">Projects</a></li>
@@ -70,8 +70,56 @@
 			</div>
 
 			<div id="projects" class="content">
-				<h2>Projects</h2>
-				<p>TODO</p>
+				<h2 class="inline">Projects</h2>
+				<ul id="project-nav">
+					<li class="inline button left-end">
+						<a href="#shouldifollow" class="left-end">Should I Follow</a>
+					</li>
+					<li class="inline button">
+						<a href="#dsp">Data Sharing Program</a>
+					</li>
+					<li class="inline button">
+						<a href="#oom">Optionometer</a>
+					</li>
+					<li class="inline button">
+						<a href="#capstone">Capstone Project</a>
+					</li>
+					<li class="inline button">
+						<a href="#cppticker">cppticker</a>
+					</li>
+					<li class="inline button right-end">
+						<a href="#td">TradeDetective</a>
+					</li>
+				</ul>
+
+				<div id="shouldifollow">
+					<p><img id="shouldifollow-screen" class="screenshot" src="images/shouldifollow_ss.png" alt="shouldifollow thumbnail" />Quickly assessing someone's Twitter activity by glancing at their profile can be tough to get a good idea of tweet frequency due to replies and retweets. So I created <a href="http://www.shouldifollow.com/">ShouldIFollow</a> to easily see how often an account tweets.</p>
+					<p>A fairly simple Ruby on Rails app running on Heroku, it displays some metrics to get a feel for how frequently and what times of day someone tweets. This is open source and available on <a href="https://github.com/Exupery/shouldifollow">GitHub</a>.</p>
+				</div>
+				<div id="dsp">
+					<p>StopBadware's Badware Data Sharing Program "...aims to improve security researchers' and practitioners' access to quality, timely data. Participants provide StopBadware with an automated feed of time-stamped badware URLs and related data. The data is shared with other participants and with vetted academic and non-commercial researchers. Data is also used by StopBadware to inform our independent review process, to generate aggregated data, to identify and report on badware trends, and to communicate with site owners and service providers (e.g., Web hosting providers) about badware within their zones of control..." [Excerpt from <a href="https://www.stopbadware.org/data-sharing">stopbadware.org/data-sharing</a>]</p>
+					<p>The Data Sharing Program is three separate Java applications, communicating via combination of API and Iron.io's <a href="http://www.iron.io/mq">IronMQ</a> message queues:</p>
+					<ul>
+						<li>an importer to retrieve the participants' data</li>
+						<li>a resolver to resolve all hosts to IPs and all IPs to Autonomous Systems</li>
+						<li>the API that provides access to the data (MongoDB is used as a datastore).</li>
+					</ul>
+					<p>There is also a web-app (written in Scala and using the Play framework) to provide administrative functions (whitelisting accounts, requesting API keys, etc) and provide non-programmatic access to the data.</p>
+				</div>
+				<div id="oom">
+					<p><img id="oom-screen" class="screenshot" src="images/oom.png" alt="optionometer thumbnail" />Developed as a side project, <a href="http://www.optionometer.com/">Optionometer</a> was created for my hobby of option trading. Optionometer presents data representing analysis of nearly half a million option spread combinations. In an effort to find the most profitable trades available the app calculates profit potential for various multi-leg strategies. Of the hundreds of thousands of possible combinations the app selects the best ones and displays relevant data for each trade. Optionometer is written in Scala (with the front-end using the Play framework) and is open sourced on <a href="https://github.com/Exupery/optionometer">GitHub</a>.<p>
+				</div>
+				<div id="capstone">
+					<p><img id="capstone-screen" class="screenshot" src="images/wgu.png" alt="WGU project thumbnail" />Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a Java application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
+					<p>As a side project I begain rewriting this in C++ in order to get more familiar with the language. This rewrite is on <a href="https://github.com/Exupery/MimirsWell">GitHub</a>, though I stopped working on it to shift my free time to focus on other side projects. At some point I may resume work on it for possible Optionometer integration.</p>
+				</div>
+				<div id="cppticker">
+					<p><img id="cppticker-screen" class="screenshot" src="images/cppticker.png" alt="cppticker thumbnail" />After finishing school I my next goal for myself was to learn C++. After picking up the basics from a tutorial I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href="https://github.com/Exupery/cppticker">GitHub</a>.</p>
+				</div>
+				<div id="td">
+					<p>Created to assist BT's Misison Control with trade audits, TradeDetective saved analysts time by bringing together the needed information for a trade investigation. Originally coded in Ruby on Rails before a re-write in PHP to facilitate better integration with other tools in use.</p>
+					<p>Similar to the above, BBO Detective was created to match trades that can go through multiple liquidity providers (such as in BT's best bid/best offer system). Also completed in PHP, though it utilized much heavier use of JavaScript than TradeDetective.</p>
+				</div>
 			</div>
 
 			<div id="exp" class="content">
