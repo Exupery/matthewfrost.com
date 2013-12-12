@@ -10,13 +10,14 @@ html, body, #container {
 body > #container {
 	height: auto;
 	min-height: 100%;
+	padding-bottom: 2em;
 }
 
 #footer {
 	clear: both;
 	position: relative;
-	height: 3em;
-	margin-top: -1em;
+	height: 4em;
+	margin-top: -3em;
 }
 
 h1 {
@@ -169,9 +170,10 @@ h2 {
 }
 
 #main {
-	min-height: 20em;
+	min-height: 4em;
 	border-left-style: solid;
 	border-left-width: 8em;
+	border-color: #000000;
 	margin-bottom: 2em;
 	max-width: 1600px;
 }
@@ -247,4 +249,24 @@ h2 {
 
 #dsp ul	 {
 	margin-left: 1.5em;
+}
+
+.screenshot {
+	width: 250px;
+	float: right;
+	margin-left: 3em;
+	margin-right: 5em;
+	margin-bottom: 1em;
+}
+
+.screenshotframe {
+	text-align: center;
+}
+
+.ui-dialog-titlebar {
+	display: none;
+}
+
+:focus {
+	outline: none;
 }

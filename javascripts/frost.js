@@ -3,32 +3,32 @@ $(function() {
 			autoOpen: false,
 			draggable: false,
 			resizable: false,
-			show: "clip",
-			hide: "clip",
+			show: "blind",
+			hide: "blind",
 			speed: "fast",
 			closeOnEscape: true,
-			width: 790,
-			height: "auto",
-			title: "X"
+			width: "auto",
+			height: "auto"
 		});
+
+	$(".screenshot").click(function(event) {
+		event.stopPropagation();
+    showDialog(this.id+"-frame");
+  });	
+
+	$(".screenshotframe").click(function(event) {
+    hideDialog(this.id);
+  });	  
 
 	$("#main, #projects").tabs({
 		heightStyle: "content",
 		animate: "easeOutCubic"
 	});	
-
-	$(".nav a, #projects li a").focus(function() {
-		$(this).blur();
-	});
 	
-	$(".sect_head").on("click", function() {
-  		ga("send", "event", "section_nav", this.id);
+	$(".button").on("click", function() {
+  	ga("send", "event", "button", this.id);
 	});
 
-	$(".projtitle").click(function(){
-		displayFull(this.id);
-		ga("send", "event", "project_disp", this.id);
-	});
 });
 
 $(document).ready(function() {
@@ -37,28 +37,14 @@ $(document).ready(function() {
 
 function showDialog(id) {
 	$("#"+id).dialog("open");
-	$("#"+id).click(function(event) {
-		event.stopPropagation();
-	});	
-	ga("send", "event", "dialog_open", id);
+	$("body").click(function() {
+    hideDialog(id);
+  });
+	ga("send", "event", "dialog", id);
 }
 
 function hideDialog(id) {
 	$("#"+id).dialog("close");
-}
-
-function displayFull(id) {
-	var idhtml = $("#"+id+"txtfull").html();
-	$("#projectdetails").html(idhtml);
-	$("h2.projtitle").removeClass("whiteonblue").addClass("blueonwhite");
-	$("#"+id ).addClass("whiteonblue");
-	$("body").click(function() {
-		hideDialog(id+"frame");
-	});
-	$("#"+id+"screen").click(function(event) {
-		event.stopPropagation();
-		showDialog(id+"frame");
-	});
 }
 
 function drawSkills(parent) {
