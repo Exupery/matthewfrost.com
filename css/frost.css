@@ -200,6 +200,10 @@ h2 {
 	margin-left: 3em;
 }
 
+#projects .ui-tabs-panel {
+	margin-left: 0em;
+}
+
 #main-nav.ui-tabs-nav {
 	margin-top: 0em;
 	padding-left: 0em;
