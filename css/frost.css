@@ -263,6 +263,10 @@ h2 {
 	margin-bottom: 1em;
 }
 
+.screenshot:hover {
+	cursor: pointer;
+}
+
 .screenshotframe {
 	text-align: center;
 }
@@ -273,4 +277,11 @@ h2 {
 
 :focus {
 	outline: none;
+}
+
+.screenshotframe img {
+	min-height: 200px;
+	max-height: calc(99% - 0.5em);
+	border: solid;
+	border-width: 0.25em;
 }
