@@ -55,13 +55,14 @@ function drawSkills(parent) {
 		["PHP",3],
 		["C++",2],
 		["JavaScript",4],
-		["Lua",2],
+		["Clojure",1],
 		["Perl",1],
+		["Lua",2],
 		["MySQL",5],
-		["PostgreSQL",2],
-		["MongoDB",3],
+		["PostgreSQL",3],
 		["Redis",2],
-		["Play",2],
+		["MongoDB",3],
+		["Play",3],
 		["Rails",3]
 	];
 	var html = "";
