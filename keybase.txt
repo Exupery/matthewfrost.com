@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/frostmatthew
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.matthewfrost.com
+  * I am frostmatthew (https://keybase.io/frostmatthew) on keybase.
+  * I have a public key with fingerprint 3B6E 4FAE EF63 383D 7A41  E2EA C039 E0ED F2FC 7203
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "3b6e4faeef63383d7a41e2eac039e0edf2fc7203",
+            "host": "keybase.io",
+            "key_id": "c039e0edf2fc7203",
+            "uid": "3f4e8040f337149d6eb9fe43820cc600",
+            "username": "frostmatthew"
+        },
+        "service": {
+            "hostname": "www.matthewfrost.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1408137400,
+    "expire_in": 157680000,
+    "prev": "c523186b6ec262cec4d9af8f6a303993fead23850d53a91eeff70901c24750b6",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.3.1
+Comment: https://keybase.io/crypto
+
+yMHsAnicbZFfSFNxFMc3/7SUFGOVVEJwl9DD0N+9v7u73ZULJCutCBGdlDDun9/P
+3dLdeXe3KWNQQYQUUUERJkGpQUW+JPTvwaHuRQ0Vs4egNJmRWYKJRpTW7w576+nH
+75zP+Z5zvmcoL9OUaw6llr2P+xbmzSOJtbCpZrH1eYwSVbmNcseosyj9YCXQiLSg
+pgR0yk1BkUMsFhDCHIQuKDsFlkYMEiQAeQSQjBksORkAKTvlV0NGBZERhRAqUVQS
+Ix+fIpPof/hwOgExi1yABRhCJ83yModEHiMWuhggSRwABhhCWkBoRoTGGmnSLOi6
+H0WpuJ0imYgiIWNuo/0GFY1GSzagdEGJpDYTnaCm6qqkNhHCr+tBtyGgtwXTFUj0
+bWj5RCUgEw9IQQRpIUUNUG6akJKuGOI0C1w0dLIA2CnUGlQ05FMMwuHkXAAY0aCG
+IsbGDgbSLo74JzEcIyGJlXkBuzAnQOIFDzESZAa6HEB2QIGnicPYCXhASwzrdACR
+o4ztWgIq5XaQMYVGIhlSGgOCHtYQFR9INGSZzLmmTdkZxhVNuTkF/27rzbGs27xz
+LV2FZVWHap9Ze9mKcXbq6qPUwxujv7aeGn/XZq7fF66rZGOj3qaLx+p3++ZMY7gI
+r3YW9Zzflfd9GM8mT6xYfEJqfvpCsve6zR2dqBmO3Tu+49UPJXPPkcPFSyM95ZPt
+b4s/F577ve3jtemxxJlMvSPbaikcb0itxac9f/K299u+HThYMFidqlh7nN8dKs9/
+8+Cn986WuHZUqLpVG/y0Inkn2O4PSx1ZlwtKK+0ZIgfvrz/te7Lg9vj8l26CvS+7
+hhY9p60zs/ztspmkZ6m69Mv66v7l0qmTryfLptotOyfq6jqTSSxc4foZm/tFNJJ4
+fzf41bp5wAoH/wLOxh4A
+=f4jU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/frostmatthew
+
+==================================================================
+
