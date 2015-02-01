@@ -5,6 +5,7 @@ hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white
 hi LineNr cterm=NONE ctermfg=245 ctermbg=238
 set nofoldenable
 set nobackup
+set noswapfile
 set history=1000 " Store a ton of history (default is 20)
 set backspace=indent,eol,start " backspace for dummies
 set linespace=0 " No extra spaces between rows
