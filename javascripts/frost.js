@@ -52,7 +52,7 @@ function drawSkills(parent) {
 		["Java",5],
 		["Scala",4],
 		["Ruby",3],
-		["PHP",3],
+		["Go",2],
 		["C++",2],
 		["JavaScript",4],
 		["Clojure",1],
