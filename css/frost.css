@@ -141,12 +141,8 @@ h2 {
 	padding-right: 0.75em;
 }
 
-#projects ul {
-	padding-left: 0em;
-}
-
 #projects li {
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 #projects li a {
