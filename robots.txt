@@ -1,5 +1,8 @@
+# It can't be bargained with.
+# It can't be reasoned with.
+# It doesn't feel pity, or remorse, or fear.
+
 User-agent: *
-Disallow: /images/
 Disallow: /misc/
 Disallow: /should/
 Disallow: /pvp/
