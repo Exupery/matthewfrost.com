@@ -1,6 +1,6 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
 		<meta charset="utf-8">
 		<title>Matthew Frost</title>
 		<meta name="author" content="Matthew Frost" />
@@ -26,7 +26,7 @@
 			ga('create', 'UA-25433508-4', 'matthewfrost.com');
 			ga('send', 'pageview');
 		</script>
-	</head> 
+	</head>
 	<body>
 		<div id="container">
 			<div id="heading" class="with-border with-bottom-left-border">
@@ -80,17 +80,17 @@
 						<li id="proj-dontcast" class="inline button">
 							<a href="#dontcast" class="inline">DontCast</a>
 						</li>
-						<li id="proj-capstone" class="inline button">
-							<a href="#capstone" class="inline">WGU Capstone</a>
+						<li id="proj-pvp" class="inline button">
+							<a href="#pvp" class="inline">PvP Leaderboard</a>
 						</li>
-						<li id="proj-cppticker" class="right-end inline button">
-							<a href="#cppticker" class="right-end inline">cppticker</a>
+						<li id="proj-capstone" class="right-end inline button">
+							<a href="#capstone" class="right-end inline">WGU Capstone</a>
 						</li>
 					</ul>
 
 					<div id="shouldifollow">
 						<p><img id="shouldifollow-screen" class="screenshot" src="images/shouldifollow_ss.png" alt="shouldifollow thumbnail" />Quickly assessing someone's Twitter activity by glancing at their profile can be tough to get an accurate idea of tweet frequency; <a href="https://www.shouldifollow.com/">ShouldIFollow</a> was intially created to easily see how often an account tweets and was later expanded to provide other data points.</p>
-						<p>It displays the following metrics: 
+						<p>It displays the following metrics:
 							<ul>
 								<li>Tweets per day</li>
 								<li>Retweets per day</li>
@@ -114,22 +114,24 @@
 						<p>There is also a web-app (written in Scala and using the Play framework) to provide administrative functions (whitelisting accounts, requesting API keys, etc) and provide non-programmatic access to the data.</p>
 					</div>
 					<div id="dontcast">
-						<p><img id="dontcast-screen" class="screenshot" src="images/dontcast_ss.jpg" alt="dontcast thumbnail" />Working on this is a lot of fun as it allows me to combine my enjoyment of <a href="http://us.battle.net/wow/en/">World of Warcraft</a> with my passion for coding. DontCast is an addon that warns players when their target would be immune to damage (i.e. "don't bother casting"). It displays the name and icon of their opponent's damage mitigating ability, along with a timer counting down the seconds until the ability expires.</p>
+						<p><img id="dontcast-screen" class="screenshot" src="images/dontcast_ss.jpg" alt="dontcast thumbnail" />Working on this is a lot of fun as it allows me to combine my enjoyment of <a href="https://us.battle.net/wow/en/">World of Warcraft</a> with my passion for coding. DontCast is an addon that warns players when their target would be immune to damage (i.e. "don't bother casting"). It displays the name and icon of their opponent's damage mitigating ability, along with a timer counting down the seconds until the ability expires.</p>
 						<p>Originally created for my own use, but put it on the major addon sites in case anyone else found it useful. I thought maybe a dozen people would download it; as of early 2015 it has over 13,000 downloads on <a href="http://www.curse.com/addons/wow/dontcast">Curse</a> and another 2,500+ on <a href="http://www.wowinterface.com/downloads/info22555-DontCast.html">WoWInterface</a>.</p>
 						<p>View on <a href="https://github.com/Exupery/DontCast">GitHub</a>.</p>
 					</div>
+					<div id="pvp">
+						<p><img id="pvp-screen" class="screenshot" src="images/pvp.png" alt="pvp leaderboard thumbnail" />As an avid <a href="https://us.battle.net/wow/en/">World of Warcraft</a> PvPer I would frequently find myself looking up players on the leaderboards to see what choices they were making regarding talents, glyphs, and gear. This was a time-consuming process which limited the sample-size and so I created <a href="https://www.pvpleaderboard.com/">PvP Leaderboard</a>.</p>
+						<p>PvP Leaderboard looks up (daily) the players on each of the leaderboards and then provides the results (with optional <a href="https://www.pvpleaderboard.com/filter">filtering</a>) allowing someone to quickly and easily see the choices top players are making.</p>
+						<p>On GitHub: <a href="https://github.com/Exupery/pvpleaderboard">web app</a> (Ruby on Rails), <a href="https://github.com/Exupery/pvpleaderboardupdater">updater</a> (Go).</p>
+					</div>
 					<div id="capstone">
 						<p><img id="capstone-screen" class="screenshot" src="images/wgu.png" alt="WGU project thumbnail" />Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a Java application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
-					</div>
-					<div id="cppticker">
-						<p><img id="cppticker-screen" class="screenshot" src="images/cppticker.png" alt="cppticker thumbnail" />After finishing school my next goal for myself was to learn C++. After picking up the basics I created a command line stock ticker application that regularly updates and displays data for U.S. stocks and indices. This was also my first open source project and can be viewed on <a href="https://github.com/Exupery/cppticker">GitHub</a>.</p>
 					</div>
 
 					<div id="capstone-screen-frame" class="screenshotframe">
 						<img id="capstone-image" alt="WGU project screenshot" src="images/wgu.png"/>
 					</div>
-					<div id="cppticker-screen-frame" class="screenshotframe">
-						<img id="cppticker-image" alt="cppticker screenshot" src="images/cppticker.png"/>
+					<div id="pvp-screen-frame" class="screenshotframe">
+						<img id="pvp-image" alt="pvp screenshot" src="images/pvp.png"/>
 					</div>
 					<div id="shouldifollow-screen-frame" class="screenshotframe">
 						<img id="shouldifollow-image" alt="shouldifollow screenshot" src="images/shouldifollow_ss.png"/>
@@ -191,5 +193,5 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="javascripts/frost.min.js"></script>
-	</body> 
-</html> 
+	</body>
+</html>
