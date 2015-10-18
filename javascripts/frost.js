@@ -14,25 +14,21 @@ $(function() {
 	$(".screenshot").click(function(event) {
 		event.stopPropagation();
     showDialog(this.id+"-frame");
-  });	
+  });
 
 	$(".screenshotframe").click(function(event) {
     hideDialog(this.id);
-  });	  
+  });
 
 	$("#main, #projects").tabs({
 		heightStyle: "content",
 		animate: "easeOutCubic"
-	});	
-	
+	});
+
 	$(".button").on("click", function() {
   	ga("send", "event", "button", this.id);
 	});
 
-});
-
-$(document).ready(function() {
-	drawSkills("skills-boxes");
 });
 
 function showDialog(id) {
@@ -45,45 +41,4 @@ function showDialog(id) {
 
 function hideDialog(id) {
 	$("#"+id).dialog("close");
-}
-
-function drawSkills(parent) {
-	var skills = [
-		["Java",5],
-		["Scala",4],
-		["Ruby",3],
-		["Go",2],
-		["C++",2],
-		["JavaScript",4],
-		["Clojure",1],
-		["Groovy",2],
-		["Lua",2],
-		["MySQL",5],
-		["PostgreSQL",4],
-		["Redis",2],
-		["MongoDB",3],
-		["Play",3],
-		["Rails",3]
-	];
-	var html = "";
-	for (var i=0; i<skills.length; i++) {
-		html += drawSkill(skills[i][0], skills[i][1]);
-	}
-
-	$("#"+parent).html(html);
-}
-
-function drawSkill(skill, exp) {
-	var html = 	"<div class=\"skill inline\">"+
-			    "<div class=\"skill-name\">"+skill+"</div>"+
-				"<div class=\"skills-xp\">";
-	for (var i=0; i<5; i++) {
-		if (exp > i) {
-			html += "<div class=\"inline box filled\"></div>"
-		} else {
-			html += "<div class=\"inline box\"></div>"
-		}
-	}
-	html += "</div></div>";
-	return html;						
 }

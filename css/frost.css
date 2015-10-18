@@ -204,32 +204,6 @@ h2 {
 	width: calc(9vw + 2em);
 }
 
-.skill {
-  margin-left: 0.75em;
-	margin-right: 2.75em;
-}
-
-.skill-name {
-  float: left;
-}
-
-.skills-xp {
-	margin-left: 6em;
-	margin-top: 0.2em;
-}
-
-.skills-xp .box {
-  border-style: solid;
-  border-width: 0.1em;
-  width: 1.1em;
-  height: 1.1em;
-  margin: 0.15em;
-}
-
-.skills-xp .filled {
-  background-color: #FF9966;
-}
-
 .title::after,
 .major::after {
 	content: " -";
