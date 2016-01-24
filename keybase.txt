@@ -4,57 +4,67 @@ https://keybase.io/frostmatthew
 
 I hereby claim:
 
-  * I am an admin of http://www.matthewfrost.com
+  * I am an admin of https://www.matthewfrost.com
   * I am frostmatthew (https://keybase.io/frostmatthew) on keybase.
   * I have a public key with fingerprint 3B6E 4FAE EF63 383D 7A41  E2EA C039 E0ED F2FC 7203
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "key": {
+            "eldest_kid": "0101f700a973657814456ebc0658535a5811a964ecde244884ba38cc3d2bad3ebb930a",
             "fingerprint": "3b6e4faeef63383d7a41e2eac039e0edf2fc7203",
             "host": "keybase.io",
             "key_id": "c039e0edf2fc7203",
+            "kid": "0101f700a973657814456ebc0658535a5811a964ecde244884ba38cc3d2bad3ebb930a",
             "uid": "3f4e8040f337149d6eb9fe43820cc600",
             "username": "frostmatthew"
         },
+        "revoke": {
+            "sig_ids": [
+                "81cdd3c47de8e59dacca9bf3087f5545e0d3052f54a9196583d1f058cb9a8f740f"
+            ]
+        },
         "service": {
             "hostname": "www.matthewfrost.com",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1408137400,
+    "ctime": 1453673787,
     "expire_in": 157680000,
-    "prev": "c523186b6ec262cec4d9af8f6a303993fead23850d53a91eeff70901c24750b6",
-    "seqno": 5,
+    "prev": "a33ccf3a2ed8c1b5fe0f2054e3ab54915b59ab2b34198ee0482bf6d4d2c428a1",
+    "seqno": 6,
     "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v0.3.1
+Version: Keybase OpenPGP v2.0.49
 Comment: https://keybase.io/crypto
 
-yMHsAnicbZFfSFNxFMc3/7SUFGOVVEJwl9DD0N+9v7u73ZULJCutCBGdlDDun9/P
-3dLdeXe3KWNQQYQUUUERJkGpQUW+JPTvwaHuRQ0Vs4egNJmRWYKJRpTW7w576+nH
-75zP+Z5zvmcoL9OUaw6llr2P+xbmzSOJtbCpZrH1eYwSVbmNcseosyj9YCXQiLSg
-pgR0yk1BkUMsFhDCHIQuKDsFlkYMEiQAeQSQjBksORkAKTvlV0NGBZERhRAqUVQS
-Ix+fIpPof/hwOgExi1yABRhCJ83yModEHiMWuhggSRwABhhCWkBoRoTGGmnSLOi6
-H0WpuJ0imYgiIWNuo/0GFY1GSzagdEGJpDYTnaCm6qqkNhHCr+tBtyGgtwXTFUj0
-bWj5RCUgEw9IQQRpIUUNUG6akJKuGOI0C1w0dLIA2CnUGlQ05FMMwuHkXAAY0aCG
-IsbGDgbSLo74JzEcIyGJlXkBuzAnQOIFDzESZAa6HEB2QIGnicPYCXhASwzrdACR
-o4ztWgIq5XaQMYVGIhlSGgOCHtYQFR9INGSZzLmmTdkZxhVNuTkF/27rzbGs27xz
-LV2FZVWHap9Ze9mKcXbq6qPUwxujv7aeGn/XZq7fF66rZGOj3qaLx+p3++ZMY7gI
-r3YW9Zzflfd9GM8mT6xYfEJqfvpCsve6zR2dqBmO3Tu+49UPJXPPkcPFSyM95ZPt
-b4s/F577ve3jtemxxJlMvSPbaikcb0itxac9f/K299u+HThYMFidqlh7nN8dKs9/
-8+Cn986WuHZUqLpVG/y0Inkn2O4PSx1ZlwtKK+0ZIgfvrz/te7Lg9vj8l26CvS+7
-hhY9p60zs/ztspmkZ6m69Mv66v7l0qmTryfLptotOyfq6jqTSSxc4foZm/tFNJJ4
-fzf41bp5wAoH/wLOxh4A
-=f4jU
+yMJzAnicrZJdaFxFGIY31lRNGmrwQkUKZYox0DTOnJk5Z85GoRcFLaVUkqYVoy7z
+801ymuye9ezJpjXNhVgpiPhDUagiFjUITYtYS/RCNAmxSrQi1noR0SqpEg1Kf6Ck
+CxrnLPHOS+dmmOH9nnnmm5ltWZNraqhcvLp34vTSbw1fTK8M5/aM7+waRSo2B1B+
+FA1CfYIhA5W0MBgZlEeYYGIDjGUYUJ8HgjDGfVAa+1xwyiUXhMjQZ6ANeIwJwZSk
+QmtqPCUNBaVCiiXqQDYq9UNSTqJS6rBU+cCsBLA+pYKaQDICHkiNaQgYjPWsDjxM
+XeFAXMkqnJySFeiMYrfnFoW63n/k/2fv4TqOWgYCM2wpDQgLjUOFFhgVHtbaxzgL
+ViApySK4tE2cc1Gm6QCMoLEOlEA1HoSst5Wo34lXUL4PCaKNoZoFBgTw0EitZags
+xSKwnDMO2FDMPcuZDEnotKkhFnOhVSiFDZwLesyx3anVSNfhWadWDUZGRjpXBeoy
+nTouOsdyEqexjodcYiBNy5V8ZpceKNdLQBVWYQUVlYx7L1dRhaQSxSWUJy6p0yij
+E8apH9BABB0I9pejBApRluCBL7Ab2TlQdUhJqdaWSg+M0ERxC9h6mDOgUnEWEq54
+KJWnKCOhAMBMeMr6hhlPM09IgrLrPVGKUd53mrLfIV0DSzIdTgCNzUw9emOuoSm3
+tvGG7B/nmm659d/fXYabVnZ3Le3ffHw5OH90sm36w/cXvhO1e4/Xptbv7bko5j7q
+bnyw1vfNLG49tvPgTPPBYMebyz/uvnzbUwPHvO5PT7bqrdMTa05uHN6SXDjyhrj9
+l5e2fvLcvvTE5LkT0Z93Hdr+R9uXD5GVs/cXz5+F5i3FI97ojq8fePxK36YLvacP
+tV/bMH/9s6PPP/zepTMfL8699u660u/7xrd3N/5l7M3tXZ+H6O75pUdqbT/v+mmx
+PO81tD7j9cK5Mwun8Osb2n69c/nt8U0bv/1g3ZNT5NKpF2t3bJ7bpWb+Lo999ewL
+g2sPH55ov9bz8uWZba8+3bJ4/Z635u7r/WGWV680tfSMNi+807K87Sqs/35ozyuT
+/wDYVmpE
+=qCsK
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
