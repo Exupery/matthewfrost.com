@@ -20,6 +20,13 @@ $(function() {
     hideDialog(this.id);
   });
 
+  $("#nav-projects").click(function(event) {
+    $(".lazy").each(function(i) {
+      $(this).attr("src", $(this).data("src"));
+      $(this).removeClass("lazy");
+    });
+  });
+
   $("#main, #projects").tabs({
     heightStyle: "content",
     animate: "easeOutCubic"
