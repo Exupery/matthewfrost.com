@@ -110,9 +110,6 @@
             <li id="proj-pvp" class="inline button">
               <a href="#pvp" class="inline">PvP Leaderboard</a>
             </li>
-            <li id="proj-dsp" class="inline button">
-              <a href="#dsp" class="inline">Data Sharing Program</a>
-            </li>
             <li id="proj-capstone" class="right-end inline button">
               <a href="#capstone" class="right-end inline">WGU Capstone</a>
             </li>
@@ -142,16 +139,6 @@
             <p><img id="pvp-screen" class="screenshot lazy" src="images/placeholder.jpg" data-src="images/pvp.png" alt="pvp leaderboard thumbnail" />As an avid <a href="https://worldofwarcraft.com/en-us/">World of Warcraft</a> PvPer I would frequently find myself looking up players on the leaderboards to see what talent choices they were making. This was a time-consuming process which limited the sample-size and so I created <a href="https://www.pvpleaderboard.com/">PvP Leaderboard</a>.</p>
             <p>PvP Leaderboard looks up (daily) the players on each of the leaderboards and then provides the results (with optional <a href="https://www.pvpleaderboard.com/pvp/filter">filtering</a>) allowing someone to quickly and easily see the talents top players are choosing and view the US and EU leaderboards.</p>
             <p>On GitHub: <a href="https://github.com/Exupery/pvpleaderboard">web app</a> (Ruby on Rails), <a href="https://github.com/Exupery/pvpupdater">updater</a> (Scala).</p>
-          </div>
-          <div id="dsp">
-            <p>StopBadware's Badware Data Sharing Program "...aims to improve security researchers' and practitioners' access to quality, timely data. Participants provide StopBadware with an automated feed of time-stamped badware URLs and related data. The data is shared with other participants and with vetted academic and non-commercial researchers. Data is also used by StopBadware to inform our independent review process, to generate aggregated data, to identify and report on badware trends, and to communicate with site owners and service providers (e.g., Web hosting providers) about badware within their zones of control..." [Excerpt from <a href="https://www.stopbadware.org/data-sharing">stopbadware.org/data-sharing</a>]</p>
-            <p>The Data Sharing Program is three separate Java applications, communicating via combination of API and Iron.io's <a href="https://www.iron.io/platform/ironmq/">IronMQ</a> message queues:</p>
-            <ul>
-              <li>an importer to retrieve the participants' data</li>
-              <li>a resolver to resolve all hosts to IPs and all IPs to Autonomous Systems</li>
-              <li>the API that provides access to the data (MongoDB is used as a datastore).</li>
-            </ul>
-            <p>There is also a web-app (written in Scala and using the Play framework) to provide administrative functions (whitelisting accounts, requesting API keys, etc) and provide non-programmatic access to the data.</p>
           </div>
           <div id="capstone">
             <p><img id="capstone-screen" class="screenshot lazy" src="images/placeholder.jpg" data-src="images/wgu.png" alt="WGU project thumbnail" />Received a 3.96 (out of 4.0) on my Capstone Project for WGU, a Java application that predicts stock market movement based on Twitter activity. The program analyzes mentions of a company's ticker symbol to determine a bullish, bearish, or neutral opinion based on the content of each post. Each score is then adjusted for age of post and past accuracy of author before determining the overall sentiment for a stock.</p>
