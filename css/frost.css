@@ -75,7 +75,7 @@ h2 {
 
 .inner-border {
   height: 100%;
-  border-color: #000000;
+  border-color: #000000 !important;
   background-color: #000000;
   border-left-style: solid;
   border-left-width: 1.75em;
@@ -163,7 +163,7 @@ h2 {
   min-height: 4em;
   border-left-style: solid;
   border-left-width: 8em;
-  border-color: #000000;
+  border-color: #000000 !important;
   margin-bottom: 2em;
   max-width: 1600px;
 }
